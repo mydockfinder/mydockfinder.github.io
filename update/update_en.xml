@@ -10,5 +10,5 @@
 7.ix the memory leak problem caused by the use of UWP screenshots in all previous versions (the previous UWP screenshot code used Microsoft GitHub examples, and there was a memory leak)
 
 Next release update preview:
-·Refine the last part of the skin editor, customize the clock, and then add the upload function</log>
+·Refine the skin editor, customize the clock, and then add the upload function</log>
 </xml>
