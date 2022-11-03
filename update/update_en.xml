@@ -1,5 +1,14 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9</ver>
-    <log></log>
+		<ver>1.9.2</ver>
+    <log>1.Fixed a crash issue in the previous version when clicking Launchpad display shutdown in quick succession
+2.ix the problem that the tray icon is not displayed completely in the previous version, if the update is still incomplete, please restart the computer, after this update, there will be systemtrayico daemon to permanently detect the tray, so that there will be no problem of incomplete icon display (must start booting to start, it is best to start in service mode)
+3.Adjust the myfinder temperature monitoring icon to a dynamic water column, the higher the temperature, the higher the water column
+4.Optimized the built-in pop-up keyboard operation, and fixed the problem that the pop-up window required mouse click once after displaying the pop-up window in some systems
+5.he skin editor adds the function of switching themes between dark and light colors, and adds the function of editing calendars, which can modify the calendar style in the theme
+6.references - About, Added the ability to view changelog
+7.ix the memory leak problem caused by the use of UWP screenshots in all previous versions (the previous UWP screenshot code used Microsoft GitHub examples, and there was a memory leak)
+
+Next release update preview:
+·Refine the last part of the skin editor, customize the clock, and then add the upload function</log>
 </xml>
