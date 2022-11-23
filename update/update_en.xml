@@ -1,25 +1,24 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.3</ver>
-    <log>1.Fixed the issue that individual programs in the previous version of the tray did not display icons
-2.Use the new file update replacement function to reduce the size of your own exe program
-3.Fixed an issue where all previous versions activated from the dock minimized window occasionally did not display animations
-4.Fixed the issue that the start menu was not translated for individual languages
-5.Fixed the crash issue when getting the network data UTF8 conversion in the previous version
-6.Add clock and weather icons on the dock Click to open the system that comes with the clock and weather program
-7.The skin editor adds clock editing to replace the clock background and pointer style, or change to a digital display
-8.The skin editor adds the function of uploading themes, a new upload method, and automatically adds category tags after uploading
-
-Upcoming updates for the next version:
-At present, the skin editor upload is very simple, without adding the function of description and multiple preview images, and now the preview image generation is automatic, and the next version will enrich the upload link settings
+		<ver>1.9.4</ver>
+    <log>Changelog
+1.Fix the previous version tray individual programs do not display icons again
+2.Fixed the issue of clicking the file myfinder menu - file invalidation when the desktop is clicked
+3.Fixed the issue that the previous version of mydock .exe was automatically deleted
+4.The skin editor is uploaded to the Workshop and adds custom covers, edit descriptions, and more previews
+5.Fixed the issue that the weather occasionally did not refresh in the previous version
+6.Fixed the issue that the hidden mode of dock hotkeys was disabled when switching dock hotkeys back and forth between multiple screens
+7.Increase the brightness adjustment prompt, individual display brightness adjustment may cause display damage, so add a hint, basically the external monitor will damage the notebook's own monitor is basically fine
+8.Increase the display brightness adjustment to 0 when the short prompt, to prevent individual displays after adjusting the brightness 0 after not displaying the situation at all, if you do not click OK prompt, automatically restore to 50 brightness value after 5 seconds
+9.Optimize other usage details
 
 Currently known issues
-1. Switching back and forth in the multi-screen state Dock display and hidden mode will occasionally fail
+1. After MyFinder turns on display wallpaper accent color and exits full screen, the MyFinder background color is displayed abnormally
 2. Multi-screen and turn on all screens to display myfinder, the resident tray icon display is out of sync, immersive mode other screens are not
 3. Some MyFinder systems will be stuck for a period of time when clicking the disk icon to display the secondary menu
 
-If there are no problems after the next beta version is used for a while, it will be automatically transferred to the official version
+If there are no problems with this beta version after a period of time, Sunday will automatically be transferred to the official version
 	    
-The next next release is a big feature update
+The next release is a big feature update
 Stage Manager</log>
 </xml>
