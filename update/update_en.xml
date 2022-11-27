@@ -1,23 +1,14 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.4</ver>
+		<ver>1.9.5</ver>
     <log>Changelog
-1.Fix the previous version tray individual programs do not display icons again
-2.Fixed the issue of clicking the file myfinder menu - file invalidation when the desktop is clicked
-3.Fixed the issue that the previous version of mydock .exe was automatically deleted
-4.The skin editor is uploaded to the Workshop and adds custom covers, edit descriptions, and more previews
-5.Fixed the issue that the weather occasionally did not refresh in the previous version
-6.Fixed the issue that the hidden mode of dock hotkeys was disabled when switching dock hotkeys back and forth between multiple screens
-7.Increase the brightness adjustment prompt, individual display brightness adjustment may cause display damage, so add a hint, basically the external monitor will damage the notebook's own monitor is basically fine
-8.Increase the display brightness adjustment to 0 when the short prompt, to prevent individual displays after adjusting the brightness 0 after not displaying the situation at all, if you do not click OK prompt, automatically restore to 50 brightness value after 5 seconds
-9.Optimize other usage details
-
-Currently known issues
-1. After MyFinder turns on display wallpaper accent color and exits full screen, the MyFinder background color is displayed abnormally
-2. Multi-screen and turn on all screens to display myfinder, the resident tray icon display is out of sync, immersive mode other screens are not
-3. Some MyFinder systems will be stuck for a period of time when clicking the disk icon to display the secondary menu
-
-If there are no problems with this beta version after a period of time, Sunday will automatically be transferred to the official version
+1.Fixed a problem that when some tray programs are running in administrator mode, this program resides in the tray after MyFinder starts
+2.Fixed the issue that there was no brightness reminder when adjusting the brightness in the previous version of the Control Center, and the brightness could not be adjusted
+3.Fixed the previous version of myfinder set wallpaper accent color after running for a period of time color abnormal problem
+4.Optimize UWP program detection, fix the problem that win11dev does not immediately display UWP program icon after starting UWP program
+5.Optimized the MyFinder Control Center brightness and volume small arrow button trigger area
+6.Fixed an issue where the skin editor replaced the clock image with an incorrect preview when it was smaller than 256 pixels
+7.Adjust the way to get the preview of individual program windows, for example, some music player window preview is the song cover can not correctly display the window content, this version update can display the correct window content real-time dynamic rendering, but win10 system will display a yellow box in the original window, because this is the UWP screenshot permission prompt, win11 can be closed, this is for the preparation of the pre-stage scheduling
 	    
 The next release is a big feature update
 Stage Manager</log>
