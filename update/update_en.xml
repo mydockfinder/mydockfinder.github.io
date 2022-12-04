@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.5</ver>
+		<ver>1.9.6</ver>
     <log>Changelog
-1.Fixed a problem that when some tray programs are running in administrator mode, this program resides in the tray after MyFinder starts
-2.Fixed the issue that there was no brightness reminder when adjusting the brightness in the previous version of the Control Center, and the brightness could not be adjusted
-3.Fixed the previous version of myfinder set wallpaper accent color after running for a period of time color abnormal problem
-4.Optimize UWP program detection, fix the problem that win11dev does not immediately display UWP program icon after starting UWP program
-5.Optimized the MyFinder Control Center brightness and volume small arrow button trigger area
-6.Fixed an issue where the skin editor replaced the clock image with an incorrect preview when it was smaller than 256 pixels
-7.Adjust the way to get the preview of individual program windows, for example, some music player window preview is the song cover can not correctly display the window content, this version update can display the correct window content real-time dynamic rendering, but win10 system will display a yellow box in the original window, because this is the UWP screenshot permission prompt, win11 can be closed, this is for the preparation of the pre-stage scheduling
+1.Fixed an issue where some tray programs were shown and then hidden when running in administrator mode
+2.Fixed the issue of small arrows flashing in the previous version of the Control Center submenu
+3.Fixed the issue that the calendar image of the skin editor was too large
+4.Fixed the issue that when MyFinder is hidden and the system tray is also hidden, some windows are recognized as full screen after being maximized
+5.Stage manager, which can be turned on in MyFinder Control Center (without translation), this switch will not be saved, and will be automatically turned off after restarting the program
 	    
-The next release is a big feature update
-Stage Manager</log>
+	    Additional note
+1.The stage manager of this version update is only a very simple function, and it can only be a window can not be displayed at the same time, of course, there will be many unknown problems, because Windows system software windows have many custom functions, so compatibility needs to be tested one by one.
+2.The function of hiding other windows is only occlusion, not a system-level hidden window or taking over system rendering, but the latter will use interception to hide the window perfectly, the desktop can not display icons, because now the desktop background and launchpad are the same, just a desktop screenshot window, but the perfect hidden window can really show the desktop.
+
+Stage manager known issues
+1.Continuous rapid switching windows will have multiple windows displayed at the same time, and there will also be a problem with the current window in the left pre-2.stage scheduling list, which can be solved by achieving perfect hiding of the window
+3.If a window is at the top, even if you switch other windows or display it at the top, it is also a problem of hiding windows as above
+4.WIN+D or display desktop scheduling will display abnormalities
+	</log>
 </xml>
