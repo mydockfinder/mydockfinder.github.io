@@ -1,20 +1,22 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.6</ver>
+		<ver>1.9.7</ver>
     <log>Changelog
-1.Fixed an issue where some tray programs were shown and then hidden when running in administrator mode
-2.Fixed the issue of small arrows flashing in the previous version of the Control Center submenu
-3.Fixed the issue that the calendar image of the skin editor was too large
-4.Fixed the issue that when MyFinder is hidden and the system tray is also hidden, some windows are recognized as full screen after being maximized
-5.Stage manager, which can be turned on in MyFinder Control Center (without translation), this switch will not be saved, and will be automatically turned off after restarting the program
-	    
-	    Additional note
-1.The stage manager of this version update is only a very simple function, and it can only be a window can not be displayed at the same time, of course, there will be many unknown problems, because Windows system software windows have many custom functions, so compatibility needs to be tested one by one.
-2.The function of hiding other windows is only occlusion, not a system-level hidden window or taking over system rendering, but the latter will use interception to hide the window perfectly, the desktop can not display icons, because now the desktop background and launchpad are the same, just a desktop screenshot window, but the perfect hidden window can really show the desktop.
+1.Fixed the issue that the volume menu in the previous version displayed abnormal volume synth and stuttered
+2.Fixed the issue that the Launchpad would automatically display the dock when displaying hotkey mode
+3.Corrected Russian translation, thanks @mindryder
+4.Optimized detection of UWP and PWA programs, using the new interface to instantly recognize and display UWP and PWA program icons
+5.Optimize the pre-stage scheduling, currently can perfectly hide the window seamless switching, add multi-window function, you can drag the window in the list to the current window group, you can also drag the current window to the background window list, you can also drag the window in the combined window list
 
 Stage manager known issues
-1.Continuous rapid switching windows will have multiple windows displayed at the same time, and there will also be a problem with the current window in the left pre-2.stage scheduling list, which can be solved by achieving perfect hiding of the window
-3.If a window is at the top, even if you switch other windows or display it at the top, it is also a problem of hiding windows as above
-4.WIN+D or display desktop scheduling will display abnormalities
+1.If the window is running in administrator mode, such as Task Manager, drag the window to the background or drag the window in the list to the current window group, the window will be displayed in a different position than the animation
+2.The first time you drag a window in the window list to the current window group, the window will flash back to the front when it is displayed
+3.Drag the window list to restore the animation display abnormally out of alignment
+4.Drag the group window in the window list, only the last window can be dragged, and you cannot pick a window to drag
+
+Stage manager has not yet completed the function
+1.The combined window in the window list can be expanded, selected, dragged or activated as you want
+2.Fix the known issues above (admin mode windows can be difficult to fix)
+3.Add settings related to pre-desk scheduling in preferences; Can be displayed on all screens or on a single screen; Add keyboard hotkeys to quickly turn on and off; The window list is displayed to the left or right; Adding exclusions to an app will not be scaled to the background by the pre-stage scheduling, etc
 	</log>
 </xml>
