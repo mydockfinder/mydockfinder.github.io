@@ -9,6 +9,7 @@
 5.Adjust the pre-stage scheduling and dock display minimized window mechanism, after enabling pre-stage scheduling, all the minimized window icons in the dock disappear, and the minimized windows will be displayed in the pre-stage scheduling list
 6.Fixed the crash problem caused by the new version of the window management interface in the previous version, if a crash is generated, the exception will be thrown using the old version of window management
 7.Fixed the problem that after dragging the administrator permission window in the previous version, the window displayed abnormally (I didn't expect that this most difficult result to fix was the easiest to fix, you need to start the start mode to select the service or schedule the task, so dockmod is the administrator permission)
+8.Revised German translation, thanks to @David Wasman
 
 Stage manager known issues
 1.The first time you drag a window in the window list to the current window group, the window will flash back to the front when it is displayed
