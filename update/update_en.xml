@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.7</ver>
+		<ver>1.9.7.1</ver>
     <log>Changelog
-1.Fixed the issue that the volume menu in the previous version displayed abnormal volume synth and stuttered
-2.Fixed the issue that the Launchpad would automatically display the dock when displaying hotkey mode
-3.Corrected Russian translation, thanks @mindryder
-4.Optimized detection of UWP and PWA programs, using the new interface to instantly recognize and display UWP and PWA program icons
-5.Optimize the pre-stage scheduling, currently can perfectly hide the window seamless switching, add multi-window function, you can drag the window in the list to the current window group, you can also drag the current window to the background window list, you can also drag the window in the combined window list
+1.Fixed an issue where preferences and workshops could not be opened from the first two versions
+2.Fixed the issue that windows could not be activated after using the new version of window management in the previous version
+3.When you fix a pre-stage scheduling multi-window, if you minimize a window, the entire window group will be minimized to the pre-stage scheduling list
+4.Fixed the issue that the previous version of the WSA program icon was displayed incorrectly
+5.Adjust the pre-stage scheduling and dock display minimized window mechanism, after enabling pre-stage scheduling, all the minimized window icons in the dock disappear, and the minimized windows will be displayed in the pre-stage scheduling list
+6.Fixed the crash problem caused by the new version of the window management interface in the previous version, if a crash is generated, the exception will be thrown using the old version of window management
+7.Fixed the problem that after dragging the administrator permission window in the previous version, the window displayed abnormally (I didn't expect that this most difficult result to fix was the easiest to fix, you need to start the start mode to select the service or schedule the task, so dockmod is the administrator permission)
 
 Stage manager known issues
-1.If the window is running in administrator mode, such as Task Manager, drag the window to the background or drag the window in the list to the current window group, the window will be displayed in a different position than the animation
-2.The first time you drag a window in the window list to the current window group, the window will flash back to the front when it is displayed
-3.Drag the window list to restore the animation display abnormally out of alignment
-4.Drag the group window in the window list, only the last window can be dragged, and you cannot pick a window to drag
+1.The first time you drag a window in the window list to the current window group, the window will flash back to the front when it is displayed
+2.Drag the window list to restore the animation display abnormally out of alignment
+3.Drag the group window in the window list, only the last window can be dragged, and you cannot pick a window to drag
 
-Stage manager has not yet completed the function
+Stage manager has not yet completed the function, and also a feature that will be updated in a later version
 1.The combined window in the window list can be expanded, selected, dragged or activated as you want
 2.Fix the known issues above (admin mode windows can be difficult to fix)
 3.Add settings related to pre-desk scheduling in preferences; Can be displayed on all screens or on a single screen; Add keyboard hotkeys to quickly turn on and off; The window list is displayed to the left or right; Adding exclusions to an app will not be scaled to the background by the pre-stage scheduling, etc
