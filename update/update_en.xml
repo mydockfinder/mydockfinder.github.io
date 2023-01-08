@@ -13,5 +13,6 @@
 9.Corrected Korean translation, thanks to netizen @mshworkspace
 10.Fixed the file lock issue when the previous version was updated
 11.Fix the problem that the mouse wheel cannot scroll the process list or still adjust the volume after the volume synthesizer is displayed in the volume menu of myfinder
-12.The offline startup mode has been added to steam startup. It has been started in offline mode since version 1.9.6. This update restores the online startup mode of steam and adds an offline startup mode. Online startup can accumulate time and prevent activation of steam achievement failures</log>
+12.The offline startup mode has been added to steam startup. It has been started in offline mode since version 1.9.6, This update restores the online startup mode of steam and adds an offline startup mode. Online startup can accumulate time and prevent activation of steam achievement failures
+	</log>
 </xml>
