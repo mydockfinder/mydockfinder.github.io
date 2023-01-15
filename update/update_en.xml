@@ -1,18 +1,14 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.7.2</ver>
-    <log>Changelog
-1.Fixed the problem that the animation displayed abnormally when the minimized window was restored after the pre-stage scheduling was enabled in the previous version
-2.Fix the problem that the window is not really minimized after the window is minimized after the pre-stage scheduling is turned on
-3.Fix the problem that the windows are not aligned after dragging the window list in front of the stage (but the new version of the dragging animation cancels the center point of the window to align with the mouse. The reason for the misalignment is that the animation calculation of the center point of the window is incorrect, and it may be that my calculation of the geometric coordinates is incorrect. question)
-4.Optimize the problem of pre-stage scheduling window list window merging group and activating a single window will activate all windows of the entire window group
-5.Fix the wrong level of group icons in the front scheduling window
-6.Fix the problem of wrong window hierarchy after the front-stage scheduling window group is activated
-7.Optimize url file icon display
-8.Adjust the color of the icon mask, if the icon is a bright icon mask, change it to a black background
-9.Corrected Korean translation, thanks to netizen @mshworkspace
-10.Fixed the file lock issue when the previous version was updated
-11.Fix the problem that the mouse wheel cannot scroll the process list or still adjust the volume after the volume synthesizer is displayed in the volume menu of myfinder
-12.The offline startup mode has been added to steam startup. It has been started in offline mode since version 1.9.6, This update restores the online startup mode of steam and adds an offline startup mode. Online startup can accumulate time and prevent activation of steam achievement failures
+		<ver>1.9.7.3</ver>
+    <log>If there is a file lock prompted when updating, exit the program first, and then open Task Manager to end the SystemTrayico process.
+If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
+	    Changelog
+1.Fix the myfinder stuck problem caused by myfinder temperature rendering in the previous version
+2.Added the myfinder tray icon failure detection function to prevent the tray icon from remaining after individual programs exit
+3.Fix the problem that the system's own hidden prompts cannot be hidden when only opening myfinder
+4.Fix the problem that after the window is minimized to the dock, it cannot be displayed in front of the stage when the window is minimized
+5.The window group expansion function is added to the pre-stage scheduling. The right mouse button on the window icon can expand the combined window group icon, and a single window can be activated. At the same time, the file drag function is added, and the file can be dragged and dropped into the front-stage scheduling window group to activate the corresponding window to complete the file. Drag and drop (the function of dragging and dropping files needs to be started in non-administrator mode, and cannot be an administrator account)
+6.Preferences add pre-stage scheduling settings, you can choose to display and hide desktop icons, you can adjust the size, spacing and number of front-stage scheduling window icons, you can save the configuration after enabling pre-stage scheduling in preferences, and you can directly restart the program next time Enable the pre-stage scheduling function
 	</log>
 </xml>
