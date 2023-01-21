@@ -1,14 +1,20 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.7.3</ver>
+		<ver>1.9.7.4</ver>
     <log>If there is a file lock prompted when updating, exit the program first, and then open Task Manager to end the SystemTrayico process.
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Changelog
-1.Fix the myfinder stuck problem caused by myfinder temperature rendering in the previous version
-2.Added the myfinder tray icon failure detection function to prevent the tray icon from remaining after individual programs exit
-3.Fix the problem that the system's own hidden prompts cannot be hidden when only opening myfinder
-4.Fix the problem that after the window is minimized to the dock, it cannot be displayed in front of the stage when the window is minimized
-5.The window group expansion function is added to the pre-stage scheduling. The right mouse button on the window icon can expand the combined window group icon, and a single window can be activated. At the same time, the file drag function is added, and the file can be dragged and dropped into the front-stage scheduling window group to activate the corresponding window to complete the file. Drag and drop (the function of dragging and dropping files needs to be started in non-administrator mode, and cannot be an administrator account)
-6.Preferences add pre-stage scheduling settings, you can choose to display and hide desktop icons, you can adjust the size, spacing and number of front-stage scheduling window icons, you can save the configuration after enabling pre-stage scheduling in preferences, and you can directly restart the program next time Enable the pre-stage scheduling function
+1.Fix the problem that sometimes the separator of the new running program will disappear after opening the minimized window to the icon in the previous version of the dock
+2.Fix the problem that the previous version of myfinder cannot be hidden when individual programs are full screen
+3.Fix the problem that the previous version of the online startup mode creative workshop prompts that steam is not running
+4.Fix the problem that multiple icons of the same window will appear after dragging and dropping the front scheduling window in the previous version
+5.Fix the problem of crashing or abnormal display after clicking the mouse in the preferences of the previous version to enable and disable the pre-stage scheduling
+6.Fix the problem that the minimized window in the previous version of the front desk scheduling will not display excessive animation
+7.Fixed Russian translation, thanks to @mindryder
+8.Corrected Spanish translation, thanks to @F3R96
+9.Adjust the system tray acquisition, cancel the systemtrayico program, and prevent each update from prompting to lock
+10.myfinder adds a button to display front-stage scheduling, which can be enabled in Preferences-Front-stage Scheduling
+11.Added a right-click menu to the front-end scheduling window list. If it is a window, right-click the mouse to display the right-click menu directly. If it is a window combination, it will first expand into multiple windows, and then right-click to display the right-click menu. The right-click menu can close the window or set the window to which it belongs. Excluded from front-scheduling, will no longer be displayed
+12.Added the function of displaying the title of the front-stage scheduling window, which can be enabled in Preferences-Front-stage scheduling
 	</log>
 </xml>
