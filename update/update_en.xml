@@ -1,20 +1,26 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.7.4</ver>
-    <log>If there is a file lock prompted when updating, exit the program first, and then open Task Manager to end the SystemTrayico process.
+		<ver>1.9.7.5</ver>
+    <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Changelog
-1.Fix the problem that sometimes the separator of the new running program will disappear after opening the minimized window to the icon in the previous version of the dock
-2.Fix the problem that the previous version of myfinder cannot be hidden when individual programs are full screen
-3.Fix the problem that the previous version of the online startup mode creative workshop prompts that steam is not running
-4.Fix the problem that multiple icons of the same window will appear after dragging and dropping the front scheduling window in the previous version
-5.Fix the problem of crashing or abnormal display after clicking the mouse in the preferences of the previous version to enable and disable the pre-stage scheduling
-6.Fix the problem that the minimized window in the previous version of the front desk scheduling will not display excessive animation
-7.Fixed Russian translation, thanks to @mindryder
-8.Corrected Spanish translation, thanks to @F3R96
-9.Adjust the system tray acquisition, cancel the systemtrayico program, and prevent each update from prompting to lock
-10.myfinder adds a button to display front-stage scheduling, which can be enabled in Preferences-Front-stage Scheduling
-11.Added a right-click menu to the front-end scheduling window list. If it is a window, right-click the mouse to display the right-click menu directly. If it is a window combination, it will first expand into multiple windows, and then right-click to display the right-click menu. The right-click menu can close the window or set the window to which it belongs. Excluded from front-scheduling, will no longer be displayed
-12.Added the function of displaying the title of the front-stage scheduling window, which can be enabled in Preferences-Front-stage scheduling
+1.Fixed the issue that the text translation of some interfaces in the previous version was incomplete
+2.Fixed the issue that when the previous version turned off MyFinder and then started MyFinder, the microphone and pre-stage scheduling buttons did not display
+3.Fixed the issue that the text does not refresh after selecting the boot mode
+4.Fixed the issue that the MyFinder volume menu would not refresh the list when no default audio was changed when all previous versions added or removed audio devices
+5.Fixed the issue that MyFinder Control Center could not return to the Control Center after opening the pre-stage scheduling menu in the previous version with multiple screens
+6.Fixed the issue that the window size of Win11 Dev System Preferences window was displayed abnormally after moving across two screens
+7.Fixed the issue that the dock icon in all previous versions caused the count to be out of order, causing the CPU usage to become high
+8.Fixed the software stuck and unresponsive issue caused by all previous versions myfinder refresh tray icon throwing exception
+9.Preferences - About, join the Telegram link, friends who use Telegram can join
+10.Fixed the issue that the previous version of the pre-stage scheduling combination window could not drag a single window out to the window list
+11.Fixed the issue that the previous version of the dock window preview did not disappear occasionally after the mouse left
+12.Corrected Russian translation, thanks to netizens for @mindryder
+13.Fixed Spanish translation, thanks to netizens for @F3R96
+14.Pre-stage scheduling adds the window list display function on the right side of the screen, and the window list can be set in a different position for each screen
+15.Pre-stage scheduling adds the function of clicking on the desktop to hide all windows, which was turned on by default before this update and can be turned on in preferences after this update
+16.Pre-stage scheduling: Add automatic pause after the window turns into the background and go to the foreground window to automatically play media (only external programs adapt to the system's media control can pause and play)
+17.Pre-stage scheduling adds window list display hidden mode, and you can set a different window list display hidden mode for each screen
+18.Pre-stage scheduling adds keyboard shortcuts to turn on and off the pre-stage scheduling function, if the multi-screen situation is the screen where the mouse is on and off
 	</log>
 </xml>
