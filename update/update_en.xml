@@ -1,19 +1,21 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.7.6</ver>
+		<ver>1.9.7.7</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Changelog
-1.The preview of the dock window adds the function of closing the window by clicking the middle button of the mouse wheel
-2.Fix the problem that when the current foreground window is administrator privileges in all previous versions, the dock or the foreground scheduler cannot drag the icon or it will automatically recover after dragging
-3.Fix the problem that some themes in the creative workshop cannot be copied to the program directory after downloading, resulting in no display after downloading
-4.Fix other problems in the creative workshop
-5.Added right-click delete theme function to the theme installed in Creative Workshop
-6.Fix a crash problem caused by minimized window animation
-7.Adjust the myfinder tray icon prompt, cancel display 1
-8.Fix the problem that the last single window cannot be dragged when there are more than 3 combined windows in front of the stage
-9.Fix the problem that the edge and PWA program windows are open at the same time, and the edge program recognition does not start after switching the window level
-10.Adjust the dock running indicator light
-11.Fix all previous versions, when the computer is stuck, the window preview will not disappear automatically
+1.Fixed the issue that the tray icon was missing in the previous version
+2.Fixed the flickering issue of the previous version of the pre-stage scheduling window list
+3.Fixed an issue where the rounded corners of the previous version screen occasionally did not appear
+4.Optimized the dock window preview hiding mechanism
+5.Add the function of clicking the middle mouse button to close the window in the pre-stage scheduling window list
+6.myfinder adds the function of clicking the upper right corner to close the current maximized window, which is equivalent to retaining the operating characteristics of the Windows system, the mouse can not find the window close button, directly the upper right corner of the brainless right button to close the window, can be opened in preferences - myfinder universal
+7.Fixed the issue that the previous version of the online boot mode Steam cloud backup failed
+8.Adapt to CAD2022, fix the problem of window minimization display exception and pre-stage scheduling display exception in multi-tab situations
+9.Preferences - About, added the function of clearing the system icon cache, clearing the system icon cache will restart the explorer, and it is recommended to restart the computer after clearing the system icon cache
+10.Corrected Turkish translation, thanks to netizen @Abdulvahap Çakmak
+11.Upgrade the WinUI library
+12.Fixed the issue that when the previous version of the pre-stage scheduling had only one external window and the preference window, the window list icon was displayed back and forth
+13.Rewriting myfinder, each screen can now be rendered independently, each screen is displayed in immersive mode at the same time, and GPU rendering colors and shadows are all enabled
 	</log>
 </xml>
