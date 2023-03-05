@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.7.7</ver>
+		<ver>1.9.7.8</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Changelog
-1.Fixed the issue that the tray icon was missing in the previous version
-2.Fixed the flickering issue of the previous version of the pre-stage scheduling window list
-3.Fixed an issue where the rounded corners of the previous version screen occasionally did not appear
-4.Optimized the dock window preview hiding mechanism
-5.Add the function of clicking the middle mouse button to close the window in the pre-stage scheduling window list
-6.myfinder adds the function of clicking the upper right corner to close the current maximized window, which is equivalent to retaining the operating characteristics of the Windows system, the mouse can not find the window close button, directly the upper right corner of the brainless right button to close the window, can be opened in preferences - myfinder universal
-7.Fixed the issue that the previous version of the online boot mode Steam cloud backup failed
-8.Adapt to CAD2022, fix the problem of window minimization display exception and pre-stage scheduling display exception in multi-tab situations
-9.Preferences - About, added the function of clearing the system icon cache, clearing the system icon cache will restart the explorer, and it is recommended to restart the computer after clearing the system icon cache
-10.Corrected Turkish translation, thanks to netizen @Abdulvahap Çakmak
-11.Upgrade the WinUI library
-12.Fixed the issue that when the previous version of the pre-stage scheduling had only one external window and the preference window, the window list icon was displayed back and forth
-13.Rewriting myfinder, each screen can now be rendered independently, each screen is displayed in immersive mode at the same time, and GPU rendering colors and shadows are all enabled
+1.Fixed the issue that the previous version of MyFinder shortcut keys could not adjust the brightness and the brightness prompt was not displayed
+2.Fixed the issue that the dock window preview occasionally did not disappear
+3.Fixed the issue that the volume menu did not display the audio device when MyFinder was multi-screen
+4.Fixed the MyFinder startup crash in multi-screen situations
+5.Fixed the issue that myfinder did not display the input method icon when there was only one input method in the previous version
+6.Fixed the issue that some systems could not switch input methods from MyFinder
+7.Fix other issues
+8.Added Czech translations, thanks to all translations provided by netizen @Jan Peřina
+9.Optimized launchpad search, now you can enter search directly after displaying launchpad
+10.Optimized launchpad motion blur background, all rendered in the GPU
+11.MyFinder adds multi-screen custom zoom function, which can be turned on in Preferences - MyFinder General, and only multiple monitors can use this function
+12.Pre-stage scheduling adds the function of opening the window boundary, which can be turned on in Preferences - Pre-stage Scheduling, the size of the window boundary is an estimated measurement, and there will be inaccurate boundaries
+13.The window minimization animation adds the dynamic window refresh function, which can be turned on in Preferences - Minimization
 	</log>
 </xml>
