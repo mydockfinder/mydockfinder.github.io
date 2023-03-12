@@ -1,21 +1,18 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.7.8</ver>
+		<ver>1.9.7.9</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Changelog
-1.Fixed the issue that the previous version of MyFinder shortcut keys could not adjust the brightness and the brightness prompt was not displayed
-2.Fixed the issue that the dock window preview occasionally did not disappear
-3.Fixed the issue that the volume menu did not display the audio device when MyFinder was multi-screen
-4.Fixed the MyFinder startup crash in multi-screen situations
-5.Fixed the issue that myfinder did not display the input method icon when there was only one input method in the previous version
-6.Fixed the issue that some systems could not switch input methods from MyFinder
-7.Fix other issues
-8.Added Czech translations, thanks to all translations provided by netizen @Jan Peřina
-9.Optimized launchpad search, now you can enter search directly after displaying launchpad
-10.Optimized launchpad motion blur background, all rendered in the GPU
-11.MyFinder adds multi-screen custom zoom function, which can be turned on in Preferences - MyFinder General, and only multiple monitors can use this function
-12.Pre-stage scheduling adds the function of opening the window boundary, which can be turned on in Preferences - Pre-stage Scheduling, the size of the window boundary is an estimated measurement, and there will be inaccurate boundaries
-13.The window minimization animation adds the dynamic window refresh function, which can be turned on in Preferences - Minimization
+1.Fixed the issue that the previous version of the full-screen game could not be switched
+2.Fixed the previous version of the minimize animation and the actual position of the window misalignment
+3.Optimized dock to minimize animation rendering
+4.dock minimizes window icon to add middle mouse button to directly close the window
+5.Fix the dock window preview not disappearing issue again
+6.Fixed the issue that mydock and myfinder disappeared after displaying the desktop or WIN+D for all previous versions (including older versions), but the moment the desktop was displayed, there would still be a flash that disappeared and then displayed
+7.Preferences - Added interface border transparency adjustment in themes
+8.Fixed the issue that MyFinder multi-screen volume icon did not refresh
+9.Fixed an issue where the Launchpad advanced editing interface did not have a workshop icon preview and an edit icon display error issue
+10.Launchpad adds only added icons and desktop icons feature, users who previously selected Start Menu and desktop icons will change to only desktop icons and will need to reselect the icons to display in Preferences - Launchpad
 	</log>
 </xml>
