@@ -1,19 +1,15 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.8</ver>
+		<ver>1.9.8.1</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Changelog
-1.Really fixed the issue that the dock window preview occasionally did not disappear
-2.Fixed the issue that the dock window preview is a music player and other windows cannot disappear, and can only disappear by restarting the program
-3.Fixed the issue that the volume icon did not refresh when the myfinder volume button mouse wheel scrolled
-4.Fixed the issue that the window list occasionally could not be clicked after a long period of use before the stage
-5.Fixed the issue that the MyFinder button and tray icon prompt remained displayed after the mouse left MyFinder
-6.Fixed the issue that in the previous version of Win11 Dev system, the desktop right-click menu automatically hid the dock
-7.Optimized support for ARM systems
-8.Corrected Turkish translation, thanks to netizen @Abdulvahap Çakmak
-	    
-	    The following features are only available for beta channels
-Increase the system global all windows of the close animation, the default opening can not be closed, there may be individual program incompatibility, you can right-click the corresponding icon on the dock - no longer show this program minimization animation, you can cancel the closing animation of this window, currently the minimization animation and the window closing animation are connected, if mydock is not turned on can not display the window close animation
+1.Fixed the issue that the system could not completely hide the system tray after the previous version of Win11 22600
+2.Optimized dock to minimize animation rendering anti-aliasing
+3.Add multi-screen display to minimize window animation function
+4.Added support in Bulgarian, thanks to the translation of the document provided by @Трифон Иванов
+5.Fixed some other issues caused by the window closing animation in the previous beta version
+6.Preferences add window to close animation-related settings, you can increase the window of the sorter, after this update the default is to turn off the window animation, need to open in preferences, add another three windows to close the animation effect, click to preview the corresponding animation effect, the last of which disappears animation GPU occupation is relatively high
+7.Fix other issues (too long to forget what it is...)
 	</log>
 </xml>
