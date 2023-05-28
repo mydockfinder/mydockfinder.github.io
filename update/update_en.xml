@@ -1,18 +1,15 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.8.1</ver>
+		<ver>1.9.8.4</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Changelog
-1.Fixed an issue where minimized animations occasionally caused crashes
-2.Fixed the issue that the pre-stage scheduling using snipaste screenshot display was abnormal
-3.Fixed the issue that the dock run icon sometimes did not disappear
-4.Fixed an issue where the shutdown animation occasionally displayed an exception
-5.Fixed the issue that the myfinder button displayed overlap after sleep wake-up
-6.Fixed the issue that the pre-stage scheduling window would pause wallpaper playback when using wallpaper
-7.Revised Swedish translation, thanks to @debuggforbussiness
-8.Fixed Bulgarian translation, thanks to @Трифон Иванов
-9.Fix other issues
-10.Update the digital signature of software code, all previous old versions of digital signatures will expire on May 17, 2023, after expiration, the antivirus software may report a danger warning, it is recommended to update to the latest version
+1.Fixed the issue that the window icon was transparent in previous versions
+2.Fixed the previous version tray icon display error issue
+3.Fixed the issue that the previous version of myfinder did not display hot lyrics
+4.Dock window preview adds window top function
+5.MyFinder secondary menu adds refresh animation
+6.Fixed the issue that the pop-up window disappeared after clicking the delayed shutdown option of the previous version
+7.Fixed the issue that the window list displayed abnormally in the pre-stage scheduling multi-screen state
 	</log>
 </xml>
