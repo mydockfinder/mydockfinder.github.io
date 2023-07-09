@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.8.4</ver>
+		<ver>1.9.8.6</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
+	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
+Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	    Changelog
-1.Fixed the issue that the window icon was transparent in previous versions
-2.Fixed the previous version tray icon display error issue
-3.Fixed the issue that the previous version of myfinder did not display hot lyrics
-4.Dock window preview adds window top function
-5.MyFinder secondary menu adds refresh animation
-6.Fixed the issue that the pop-up window disappeared after clicking the delayed shutdown option of the previous version
-7.Fixed the issue that the window list displayed abnormally in the pre-stage scheduling multi-screen state
+1.Fixed the issue that when the network and Bluetooth buttons were not enabled by myfinder, the list could not be refreshed when Bluetooth and WiFi were turned on in the myfinder control center
+2.Fixed the issue that custom window borders are transparent, and window preview and myfinder control center border transparency cannot be modified
+3.Fixed the issue that the list of scheduling windows in front of the desk could not be clicked occasionally (to be experimented)
+4.Optimized the MyFinder tray icon right-click external program's menu display misalignment issue, and added the menu position to automatically update when the mouse moves to the external program's menu to prevent it from exceeding the screen
+5.Fixed the issue that Intel 13th generation CPUs could not display temperature
+6.Added keyboard shortcuts to show and hide the taskbar function, which can be set in Preferences - Global Settings
+7.Add the function of automatically displaying new windows in the center of the screen, which can be set in Preferences - Global Settings, and all newly displayed windows are forced to display in the center of the screen after opening, UWP programs will occasionally fail
+8.mydock optimizes the display of Java program icons such as Minecraft, preventing multiple Java programs from being detected as the same software, but Java programs can no longer customize the icons
+9.Fixed the bug of Chrome's PWA program minimization error after enabling minimize to icon in the previous version
+10.mydock has added four new icon effects, namely Select, Light, Zoom and Light, Selected and Lighting effects, and you can customize the intensity and color of the light
 	</log>
 </xml>
