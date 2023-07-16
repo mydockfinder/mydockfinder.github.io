@@ -13,7 +13,8 @@ Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrent
 5.Fixed the translation issue of some interfaces in the previous version
 6.Corrected Russian translation, thanks to netizen @Волков Дмитрий
 7.Fix Japanese translation, thanks to netizens for @emesan22
-8.Added the function of detecting UAC at startup to prevent the problem that some systems cannot drag and drop files after UAC is turned off
-9.The trigger corner adds multiple activation functions, you can select Advanced in the Preferences - Advanced menu, you can edit up to three functions, and the activation menu will pop up when the mouse enters the corner of the screen after selecting multiple functions
+8.Fixed Bulgarian translation, thanks to @Трифон Иванов
+9.Added the function of detecting UAC at startup to prevent the problem that some systems cannot drag and drop files after UAC is turned off
+10.The trigger corner adds multiple activation functions, you can select Advanced in the Preferences - Advanced menu, you can edit up to three functions, and the activation menu will pop up when the mouse enters the corner of the screen after selecting multiple functions
 	</log>
 </xml>
