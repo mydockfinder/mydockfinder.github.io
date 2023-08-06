@@ -1,20 +1,22 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.8.7</ver>
+		<ver>1.9.8.8</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	    Changelog
-1.Fixed the issue that the chrome browser PWA icon was displayed incorrectly after retaining the dock
-2.Fixed the problem that when individual programs were frozen or did not respond after modifying the tray icon in the previous version, they would follow the problem that they did not respond (the previous version of this function code was provided by AI, it seems that AI is not very reliable)
-3.Fix the issue that the tray icon menu cannot be hidden after being displayed (to be experimented)
-4.Optimized MyFinder monitoring pie chart rendering
-5.Fixed the translation issue of some interfaces in the previous version
-6.Corrected Russian translation, thanks to netizen @Волков Дмитрий
-7.Fix Japanese translation, thanks to netizens for @emesan22
-8.Fixed Bulgarian translation, thanks to @Трифон Иванов
-9.Added the function of detecting UAC at startup to prevent the problem that some systems cannot drag and drop files after UAC is turned off
-10.The trigger corner adds multiple activation functions, you can select Advanced in the Preferences - Advanced menu, you can edit up to three functions, and the activation menu will pop up when the mouse enters the corner of the screen after selecting multiple functions
+1.Fixed the issue that the window of the corresponding program automatically disappeared after clicking the tray icon in the previous version
+2.Fixed the issue that the click of individual program tray icons was invalid
+3.Fixed the issue that the dock could not drag and drop exe and lnk files into the folder icon in the dock
+4.Fixed the issue that the previous version of the pre-stage scheduling drag window merged with the mouse and could not be clicked
+5.Revised English translation, thanks to netizens for @UknownGino
+6.Corrected French translation, thanks to netizens for @matmat37000
+7.The dock increases the mouse activation delay time, which can be set in Preferences - Advanced
+8.The window displays centering to add exclusions
+9.Added window display animation, you can show the animation of the window creation process, the original window closing animation has been changed to window animation, window display centered has been moved to the window animation
+10.Added two new window closing animations
+11.The folder interface adds the function of customizing the icon size, which can be adjusted in Preferences - Themes
+12.The folder interface adds the menu display function, which can be set in the folder icon right-click menu in the dock
 	</log>
 </xml>
