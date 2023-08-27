@@ -7,7 +7,7 @@ If the desktop icon is not displayed after enabling pre-stage scheduling, you ca
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	    Changelog
 1.Two new window display animations have been added
-2.Preferences add the Steam account interface, you can upload and download steam cloud saves, you can also manage steam cloud space files, upload, download and delete any file by yourself, the maximum single upload file is 100M, the current cloud space is set to 50GB, because the steam cloud space file will be cached locally, so the more cloud space files, the more locally cached files
+2.Preferences add the Steam account interface, you can upload and download steam cloud saves, you can also manage steam cloud space files, upload, download and delete any file by yourself, the maximum single upload file is 100M, the current cloud space is set to 50GB, because the steam cloud space file will be cached locally, so the more cloud space files, the more locally cached files.This feature must be launched from the Steam client
 3.Added dock to show hidden animations, which can be selected in Preferences - Advanced
 4.Optimized dock display hidden animations
 5.dock adds the ability to adjust icon reflection distance, which can be adjusted in Preferences - Themes
