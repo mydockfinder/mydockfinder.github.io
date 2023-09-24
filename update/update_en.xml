@@ -1,26 +1,22 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.8.9</ver>
+		<ver>1.9.9</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	    Changelog
-1.Two new window display animations have been added
-2.Preferences add the Steam account interface, you can upload and download steam cloud saves, you can also manage steam cloud space files, upload, download and delete any file by yourself, the maximum single upload file is 100M, the current cloud space is set to 50GB, because the steam cloud space file will be cached locally, so the more cloud space files, the more locally cached files.This feature must be launched from the Steam client
-3.Added dock to show hidden animations, which can be selected in Preferences - Advanced
-4.Optimized dock display hidden animations
-5.dock adds the ability to adjust icon reflection distance, which can be adjusted in Preferences - Themes
-6.Optimized the centering of individual program windows
-7.The MyFinder battery icon adds a display of battery time remaining and can be turned on in Preferences - Battery
-8.MyFinder adds the function of hiding external programs with a menu bar (requires program support), you can check the hidden window menu bar in the secondary menu of the second button on the left side of MyFinder, each program needs to be operated separately once to prevent the program from being unstable and causing a crash after individual programs are hidden
-9.MyFinder adds the window system menu function, which is the right-click menu of the window title bar, which is operated in the secondary menu of the second button on the left
-10.The myfinder U disk menu adds the function of removing virtual optical drive and VHD (X) partition, removing the VHD partition requires administrator privileges, so you need to select the scheduled task or service in the boot mode
-11.The MyFinder tray icon adds the function of displaying the tray icon that comes with the system, which can be turned on in Preferences - Tray
-12.MyFinder Volume Menu Media Control adds the ability to adjust the media progress bar
-13.Fixed the problem that caused the code to crash when all previous versions of UWP programs obtained non-system UWP paths
-14.Fixed an issue where all previous versions were animated in slow motion on high frame rate monitors
-15.Fixed a game frame issue in all previous versions due to window closing animation
-16.Fix other issues
+1.Optimize MyFinder to connect Bluetooth headsets
+2.Optimized launchpad icon rendering
+3.Fixed Bulgarian translation, thanks to @Трифон Иванов
+4.mydock optimizes the right-click menu options to incorporate some features into "Options"
+5.The mydock normal icon adds the program menu function, which can display the right-click menu function of the separator
+6.mydock can remove all separators and trash icons
+7.MyDock adds a minimized icon position selection function, which can be selected to be displayed independently on the far right
+8.The mydock right-click menu adds a virtual jump list function, for example, Edge can display recently closed web pages
+9.Add the function of displaying the list of recently opened files of the current program, you can select the number of recently opened files list in Preferences - Global Settings, display it in the right-click menu in MyDock, and display it in the logo secondary menu in MyFinder
+10.Added full-screen game auto-exit function, which can be turned on in Preferences - Global Settings
+11.Laptops add automatic power plan switching, which can be turned on in Preferences - Battery
+12.Fixed the issue where minimized animations displayed abnormally after HDR was turned on
 	</log>
 </xml>
