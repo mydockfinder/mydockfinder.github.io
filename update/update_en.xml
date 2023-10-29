@@ -1,22 +1,19 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.9</ver>
+		<ver>1.9.9.3</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	    Changelog
-1.Optimize MyFinder to connect Bluetooth headsets
-2.Optimized launchpad icon rendering
-3.Fixed Bulgarian translation, thanks to @Трифон Иванов
-4.mydock optimizes the right-click menu options to incorporate some features into "Options"
-5.The mydock normal icon adds the program menu function, which can display the right-click menu function of the separator
-6.mydock can remove all separators and trash icons
-7.MyDock adds a minimized icon position selection function, which can be selected to be displayed independently on the far right
-8.The mydock right-click menu adds a virtual jump list function, for example, Edge can display recently closed web pages
-9.Add the function of displaying the list of recently opened files of the current program, you can select the number of recently opened files list in Preferences - Global Settings, display it in the right-click menu in MyDock, and display it in the logo secondary menu in MyFinder
-10.Added full-screen game auto-exit function, which can be turned on in Preferences - Global Settings
-11.Laptops add automatic power plan switching, which can be turned on in Preferences - Battery
-12.Fixed the issue where minimized animations displayed abnormally after HDR was turned on
+1.Fixed the issue that the previous version of window centering caused input method candidates and other window centering to not be displayed
+2.Fixed the issue that the icon in the start menu of the previous version of Launchpad could not be deleted
+3.If there are too many buttons on the right side of myfinder and all icons cannot be displayed, the mouse wheel can scroll on the right side of myfinder, and the buttons will pan to show the remaining icons
+4.Mydock background icon adds double-click activation function, if there is a situation where some programs cannot activate the window by clicking it, you can try to double-click the icon to activate the window, such as WeGame
+5.MyFinder adds the media menu function, which can manage the media of multiple processes separately, which is enabled in Preferences-MyFinder General, and the volume menu will no longer show media control after it is opened
+6.Mydock context menu recently opened files to add a fixed function, you can click the nail button in the menu
+7.Added the background window icon blurring function in Stage Manager, which is enabled in Preferences - Stage Manager
+8.Hold down the CTRL or shift key and click the window list icon to display it directly, which is similar to the function of dragging the window out of the list to quickly add window operations
+9.Corrected the Spanish translation, thanks to the netizens for @TraHu
 	</log>
 </xml>
