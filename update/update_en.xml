@@ -1,19 +1,37 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.9.3</ver>
+		<ver>1.9.9.5</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
-	    Changelog
-1.Fixed the issue that the previous version of window centering caused input method candidates and other window centering to not be displayed
-2.Fixed the issue that the icon in the start menu of the previous version of Launchpad could not be deleted
-3.If there are too many buttons on the right side of myfinder and all icons cannot be displayed, the mouse wheel can scroll on the right side of myfinder, and the buttons will pan to show the remaining icons
-4.Mydock background icon adds double-click activation function, if there is a situation where some programs cannot activate the window by clicking it, you can try to double-click the icon to activate the window, such as WeGame
-5.MyFinder adds the media menu function, which can manage the media of multiple processes separately, which is enabled in Preferences-MyFinder General, and the volume menu will no longer show media control after it is opened
-6.Mydock context menu recently opened files to add a fixed function, you can click the nail button in the menu
-7.Added the background window icon blurring function in Stage Manager, which is enabled in Preferences - Stage Manager
-8.Hold down the CTRL or shift key and click the window list icon to display it directly, which is similar to the function of dragging the window out of the list to quickly add window operations
-9.Corrected the Spanish translation, thanks to the netizens for @TraHu
+	   Changelog from the previous beta version
+1.Fixed the issue of frequent crashes in version 1.9.9.3
+2.Adjusted the Launchpad icon detection to prevent icon loss
+3.Adjust the way of hiding the redundant icons on the right side of myfinder, no longer need the mouse wheel to scroll, and will all be integrated into one hidden button
+4.MyFinder adds the custom time format function, which can be enabled in Preferences - Time
+5.MyDock adds the function of holding down the Alt key + middle mouse button to click on the icon to force the program to close
+6.Optimized the mydock window preview, and optimized the interface spacing when the preview process title is turned off in the preferences
+7.Mydock context menu: Added the ability to automatically display hidden in the "Options" when the shift key is held down
+8.Fixed several crash issues
+9.Fixed the issue of frame drops in CS2
+10.Preferences - Launchpad, added the deleted Launchpad icon recovery function, which can restore the deleted Start Menu program
+11.Mydock adds the function of multi-screen simultaneous display, open it in Preferences-MyDock General, it is not recommended to add icons and edit icons after opening, you can no longer drag and drop the dock icon to swap positions, it may cause the icon configuration to be confused, the subsequent version will be slowly optimized, it is recommended to back up the dock icon configuration before turning on multi-screen simultaneous display, and back up in Preferences-Advanced
+
+Changelog
+1.Fixed the issue that all previous versions of the volume synthesizer occasionally failed
+2.Fixed the issue that all previous versions of Stage Manager and Dock were not enabled on the same screen. Before the mouse enters the dock background, there will be duplicate icons
+3.Fixed the issue of minimized animation rendering error in the previous test version of the multi-screen dock
+4.Fixed the issue that the icons were not synchronized after adding icons to the multi-screen Dock in the previous beta version
+5.Fixed the issue that the dock could not be hidden when selecting auto on the screen of the previous test version
+6.Fixed the issue that the previous test version displayed the wrong position of the new runner icon
+7.The issue that the icon of the minimized window of the multi-screen dock in the previous beta version and the dock on the screen are not uniform is fixed
+8.Fixed a crash on all previous versions due to Firefox or other Firefox-based browser conflicts
+9.mydock adds support for Firefox PWA programs
+10.mydock minimized animation rendering changed to DX12, if the graphics card does not support DX12, it will automatically switch to DX11, it is recommended to restart the computer system after this update version, because the system video memory will cache DX11 data, resulting in a crash in rendering minimized animation
+11.Myfinder has added an account icon, which can be enabled in Preferences-MyFinder General
+12.Added the detection that the window is accidentally hidden, to prevent the window from being displayed after the window is hidden due to the shutdown of the stage scheduling or other problems, and the window can be displayed when activated in the dock
+13.Compatible with Zoom video conferencing software to prevent MyFinder from blocking the screen sharing toolbar
+14.Corrected the Spanish translation, thanks to the netizens for @TraHu
 	</log>
 </xml>
