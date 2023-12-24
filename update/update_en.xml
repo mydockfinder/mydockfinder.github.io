@@ -6,13 +6,10 @@ If the desktop icon is not displayed after enabling pre-stage scheduling, you ca
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	   Changelog
-1.Fixed an issue where the background turned black when the motion blur effect was not enabled in the previous version of the launchpad
-2.Fixed the issue that the dock would have an invalid icon when booting up the previous version
-3.Fixed the issue that the name of the newly added launchpad icon could not be modified
-4.Dock added virtual desktop icon - added system icon
-5.Added the mode of showing and hiding the detection window in the dock, and added the method of detecting all windows; For example: detect all program windows - open two program windows, the foreground window is steam not maximized, the background window is edge window maximized, the dock will still be automatically hidden; It can be selected in Preferences - Advanced
-6.Increase global font size zoom - in Preferences - Global settings
-7.Corrected the Korean translation, thanks to the netizens for @Rumi727
-8.Fixed some UI translation issues
-9.Fix other issues
+1.Fixed the issue that the icon was not displayed after adding a program to the launchpad in the previous version
+2.Fixed the flickering issue of the previous version of Dock after full screen
+3.Fixed the issue that the language name could not be displayed in all language files in some environments, resulting in the inability to switch in the preferences
+4.Adjusted myfinder and mydock to detect full screen mechanism, all previous versions are to detect whether the current window is full screen, adjusted to detect whether all windows are full screen, but the start menu is to display the mydock function synchronously after full screen
+5.Added Hungarian translation, thanks to netizens @wickdj for providing translation
+6.Optimize the reflection of the dock icon (only for systems after win10 1903)
 </xml>
