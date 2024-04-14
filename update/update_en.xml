@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.9.6</ver>
+		<ver>1.9.9.8</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	   Changelog
-1.Fixed the issue that the icon was not displayed after adding a program to the launchpad in the previous version
-2.Fixed the flickering issue of the previous version of Dock after full screen
-3.Fixed the issue that the language name could not be displayed in all language files in some environments, resulting in the inability to switch in the preferences
-4.Adjusted myfinder and mydock to detect full screen mechanism, all previous versions are to detect whether the current window is full screen, adjusted to detect whether all windows are full screen, but the start menu is to display the mydock function synchronously after full screen
-5.Added Hungarian translation, thanks to netizens @wickdj for providing translation
-6.Optimize the reflection of the dock icon (only for systems after win10 1903)
+1.Fixed the issue that the calendar interface of the previous version was not displayed completely
+2.Add a page flip function to the calendar to view other months
+3.Corrected Ukrainian translation, thanks to netizen @Олег Паньків
+4.The myfinder tray icon can be dragged in order, and the tray icon and the built-in icon can be mixed and sorted
+5.Optimized the activation mechanism of the stage-front scheduling window
+6.MyFinder has added a Focus Assistant icon, which can be enabled in Preferences-MyFinder General
+7.Reworked the rendering of the window interface, changed all to winrt composition rendering, and added some interface animation effects
+8.Optimize myfinder to display the control center, but the components will be displayed one by one after displaying the control center, because there will be a delay of tens of milliseconds to get the corresponding function, if which component is displayed slowly, that function has a large delay
+9.Optimized myfinder menu button to hide animations
+10.Added the function of enabling HDR in the myfinder display menu
+11.Fixed the issue that when the dock was automatically hidden in all previous versions, the opening window animation would automatically show the dock and the dock would be displayed when the window was minimized
 </xml>
