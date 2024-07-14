@@ -1,20 +1,17 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.9.8</ver>
+		<ver>1.9.9.9</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	   Changelog
-1.Fixed the issue that the calendar interface of the previous version was not displayed completely
-2.Add a page flip function to the calendar to view other months
-3.Corrected Ukrainian translation, thanks to netizen @Олег Паньків
-4.The myfinder tray icon can be dragged in order, and the tray icon and the built-in icon can be mixed and sorted
-5.Optimized the activation mechanism of the stage-front scheduling window
-6.MyFinder has added a Focus Assistant icon, which can be enabled in Preferences-MyFinder General
-7.Reworked the rendering of the window interface, changed all to winrt composition rendering, and added some interface animation effects
-8.Optimize myfinder to display the control center, but the components will be displayed one by one after displaying the control center, because there will be a delay of tens of milliseconds to get the corresponding function, if which component is displayed slowly, that function has a large delay
-9.Optimized myfinder menu button to hide animations
-10.Added the function of enabling HDR in the myfinder display menu
-11.Fixed the issue that when the dock was automatically hidden in all previous versions, the opening window animation would automatically show the dock and the dock would be displayed when the window was minimized
+1.Fix the problem that the dock battery icon is not refreshed in the previous version.
+2.Fix the problem that part of the interface is not displayed when the screen is rotated in the previous version of Win10 system, and the icons of part of the interface are still not displayed after this version update, we are trying to fix it.
+3.Repair the problem that the round button on the left side of myfinder is hidden and rendered, resulting in incomplete display.
+4.The dock icon progress bar is adapted to the system media control progress function, such as spotify, edge, chrome, etc. When playing media, the dock will show the corresponding progress bar (the progress bar will not be refreshed when playing video in edge and chrome browsers, and it will be refreshed only when switching to play/pause or fast-forward operations, which is the browser's own problem and not a This is a browser problem and not a bug.)
+5.mydock icon new idle use immersive mode display function, you can open in the preferences - mydock general, if the win10 system to open this function after the crash you can open the program installation directory config.ini file, search for "dockicoImmersion=1 ", delete this line of text to save and restart the computer can be.
+6.dock run indicator and progress bar rendered in overlay color (default skin only)
+7.The dock and launchpad icon masks are rendered in a new way, the icon masks are displayed independently to follow the global theme color and add some tints to the icons, the launchpad icons may not be rendered in the new way after this version update, please click Clear Launchpad Icons Cache in Preferences-About.
+8.Fixing other issues
 </xml>
