@@ -13,5 +13,9 @@ Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrent
 5.mydock icon new idle use immersive mode display function, you can open in the preferences - mydock general, if the win10 system to open this function after the crash you can open the program installation directory config.ini file, search for "dockicoImmersion=1 ", delete this line of text to save and restart the computer can be.
 6.dock run indicator and progress bar rendered in overlay color (default skin only)
 7.The dock and launchpad icon masks are rendered in a new way, the icon masks are displayed independently to follow the global theme color and add some tints to the icons, the launchpad icons may not be rendered in the new way after this version update, please click Clear Launchpad Icons Cache in Preferences-About.
-8.Fixing other issues
+8.Optimized the animation when the myfinder secondary menu is dynamically resized
+9.Fixed the issue that dragging a window to another screen in front of the stage was not displayed
+10.Added animation to turn off stage scheduling
+11.Volume prompt, speaker and mobile phone style, add mouse drag control to adjust the volume function
+12.myfinder volume menu added the function of switching sound effects spatial sound effects,At present, this function is not due to the fact that there is no example on the network, even if it is AI,So every time this function is run, the sound will be stuck when it is displayed for the first time,The reason is that the background will switch all the spatial sound effects once to detect whether which sound effects are installed
 </xml>
