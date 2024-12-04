@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.9.9.9</ver>
+		<ver>1.10</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	   Changelog
-1.Fix the problem that the dock battery icon is not refreshed in the previous version.
-2.Fix the problem that part of the interface is not displayed when the screen is rotated in the previous version of Win10 system, and the icons of part of the interface are still not displayed after this version update, we are trying to fix it.
-3.Repair the problem that the round button on the left side of myfinder is hidden and rendered, resulting in incomplete display.
-4.The dock icon progress bar is adapted to the system media control progress function, such as spotify, edge, chrome, etc. When playing media, the dock will show the corresponding progress bar (the progress bar will not be refreshed when playing video in edge and chrome browsers, and it will be refreshed only when switching to play/pause or fast-forward operations, which is the browser's own problem and not a This is a browser problem and not a bug.)
-5.mydock icon new idle use immersive mode display function, you can open in the preferences - mydock general, if the win10 system to open this function after the crash you can open the program installation directory config.ini file, search for "dockicoImmersion=1 ", delete this line of text to save and restart the computer can be.
-6.dock run indicator and progress bar rendered in overlay color (default skin only)
-7.The dock and launchpad icon masks are rendered in a new way, the icon masks are displayed independently to follow the global theme color and add some tints to the icons, the launchpad icons may not be rendered in the new way after this version update, please click Clear Launchpad Icons Cache in Preferences-About.
-8.Optimized the animation when the myfinder secondary menu is dynamically resized
-9.Fixed the issue that dragging a window to another screen in front of the stage was not displayed
-10.Added animation to turn off stage scheduling
-11.Volume prompt, speaker and mobile phone style, add mouse drag control to adjust the volume function
-12.myfinder volume menu added the function of switching sound effects spatial sound effects,At present, this function is not due to the fact that there is no example on the network, even if it is AI,So every time this function is run, the sound will be stuck when it is displayed for the first time,The reason is that the background will switch all the spatial sound effects once to detect whether which sound effects are installed
+1.Fixed the issue that the tray icon of the previous version of MyFinder was displayed inaccurately, and now Clash Verge needs to place the tray icon in the resident area of the system tray icon
+2.Fixed the issue that the hidden desktop icon was automatically displayed after the previous version exited the program
+3.Fixed the issue that when the Dock was displayed on multiple screens at the same time, only one screen Dock folder icon was refreshed when the folder icon was selected for stacking
+4.Fixed the issue that after clicking the dock folder icon continuously to display the folder interface, clicking on other blank locations could not hide the folder interface
+5.Optimized the rendering clarity of the dock icon
+6.Compatible with AMD zen5 architecture CPU temperature
+7.To adapt the lyrics of soda music desktop, you need to adjust the font size of the lyrics to 24 for the best display
+8.Fixed the issue that the window of the .pae program could not be displayed in the dock
+9.Fixed the issue that some systems could not open Explorer when clicking on the Explorer icon
+10.Dock icon mask adds the function of selecting the background color, which can be selected in Preferences - Advanced
+11.Corrected Dutch translation, thanks to netizen @Jani-Aelterman-HoGent
 </xml>
