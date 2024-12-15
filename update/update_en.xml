@@ -1,20 +1,19 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10</ver>
+		<ver>1.10.1</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	   Changelog
-1.Fixed the issue that the tray icon of the previous version of MyFinder was displayed inaccurately, and now Clash Verge needs to place the tray icon in the resident area of the system tray icon
-2.Fixed the issue that the hidden desktop icon was automatically displayed after the previous version exited the program
-3.Fixed the issue that when the Dock was displayed on multiple screens at the same time, only one screen Dock folder icon was refreshed when the folder icon was selected for stacking
-4.Fixed the issue that after clicking the dock folder icon continuously to display the folder interface, clicking on other blank locations could not hide the folder interface
-5.Optimized the rendering clarity of the dock icon
-6.Compatible with AMD zen5 architecture CPU temperature
-7.To adapt the lyrics of soda music desktop, you need to adjust the font size of the lyrics to 24 for the best display
-8.Fixed the issue that the window of the .pae program could not be displayed in the dock
-9.Fixed the issue that some systems could not open Explorer when clicking on the Explorer icon
-10.Dock icon mask adds the function of selecting the background color, which can be selected in Preferences - Advanced
-11.Corrected Dutch translation, thanks to netizen @Jani-Aelterman-HoGent
+1.Fixed some issues with the tray icon in the previous version
+2.Optimized the rendering of text on the interface
+3.Fix the problem that the WiFi list cannot be displayed after turning off geolocation under win11 24H2 system (it is recommended to turn on geolocation so that the WiFi function will be better)
+4.Fixed the crash issue caused by the sorting of the button on the right side of myfinder in all previous versions
+5.Fixed the crash issue caused by getting system notifications in all previous versions
+6.Optimized the rendering speed of icons when the launchpad is displayed for the first time
+7.The issue of high CPU usage caused by some reasons in the previous version is fixed
+8.Fixed the issue that all previous versions of MyFinder could not hide the second screen full screen window
+9.Fixed the issue that all previous versions of MyDock could not activate the display after the Dock was hidden when there was a full-screen window on other screens
+10.Fixed the issue that the dock window preview could not activate the window to the front end in some cases in all previous versions (to be experimented)
 </xml>
