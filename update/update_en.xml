@@ -1,19 +1,18 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10.1</ver>
+		<ver>1.10.2</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    Due to the problem that some users have dock can not drag and drop files to open, the reason has been found, that is, close the UAC user account control, close UAC will default to the system in all programs are administrator mode running, because drag-and-drop files can not be started in administrator mode, you can manually open UAC, in the control panel - user account - change user account control, do not choose never prompt, after opening may restart the system, after the restart should be able to drag and drop files, You can then manually turn off UAC again so that file drag-and-drop is not affected
 Or you can modify the registry HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem Right EnableLUA is changed to 1, and the system will be prompted to restart after modification
 	   Changelog
-1.Fixed some issues with the tray icon in the previous version
-2.Optimized the rendering of text on the interface
-3.Fix the problem that the WiFi list cannot be displayed after turning off geolocation under win11 24H2 system (it is recommended to turn on geolocation so that the WiFi function will be better)
-4.Fixed the crash issue caused by the sorting of the button on the right side of myfinder in all previous versions
-5.Fixed the crash issue caused by getting system notifications in all previous versions
-6.Optimized the rendering speed of icons when the launchpad is displayed for the first time
-7.The issue of high CPU usage caused by some reasons in the previous version is fixed
-8.Fixed the issue that all previous versions of MyFinder could not hide the second screen full screen window
-9.Fixed the issue that all previous versions of MyDock could not activate the display after the Dock was hidden when there was a full-screen window on other screens
-10.Fixed the issue that the dock window preview could not activate the window to the front end in some cases in all previous versions (to be experimented)
+1.Fixed the previous myfinder tray icon sorting occasionally out of order
+2.MyFinder menu bar is compatible with ZEN, FLOORP, and ARC browsers
+3.Fixed the issue that the MyFinder menu bar was stuck after unlocking the screen
+4.Dock Explorer icon right-click menu added Reboot and set Explorer to show and hide mode independently
+5.Preferences - Minimize the number of frames waiting to minimize the number of rendered frames, prevent flickering at the beginning of the minimization, if there is a minimized animation that will flash at the beginning, you can select this function, select the number of frames without flickering, it is not recommended to choose more because it will increase the delay, if there is no flickering, you don't need to set this function
+6.Revert WIN2D library, increase stability, fix SVN conflict issues
+7.Fixed the issue that the Launchpad folder opening animation icon was misplaced
+8.Optimized the dock to minimize animation rendering
+9.Corrected the Spanish translation, thanks to the netizens for @F3R96
 </xml>
