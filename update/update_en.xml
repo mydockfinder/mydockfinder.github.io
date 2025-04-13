@@ -5,10 +5,19 @@
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI Airplane will cause irregular freezing or crashing issues, you can set it in MSI Airplane, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Fixed the issue that the icons were not displayed correctly after adding individual icons to the launchpad
-2.Fix the issue that myfinder shows the microphone device error
-3.Fixed a crash caused by spatial sound
-4.Added Dock Delay Hiding Function, adjust it in Preferences - Advanced
-5.Corrected Portuguese Brazilian translation, thanks to netizens for @Matheeuz
-6.Fix other issues
+1.Fixed the issue that Steam would open the explorer when using offline startup in some systems
+2.Fixed the crash issue caused by the animation of some system windows
+3.Fixed the issue that the Dock was stuck after turning off Minimized Dock in the previous version preferences
+4.Fixed rendering errors in previous versions
+5.Fixed the issue that some new Intel CPUs did not display temperature
+6.Fixed the issue that myfinder was displayed on the same screen when starting up with multi-screen boot in all previous versions (to be experimented)
+7.Fixed the issue that the lyrics were rendered incorrectly after the lyrics of the player were hidden in all previous versions
+8.Fix other issues
+9.Added Slovak translation, thanks to netizen @grimind-tech
+10.Myfinder lyrics added the function of adjusting the lyrics cropping, click the myfinder lyrics secondary menu
+11.Added the function of adjusting the height of myfinder, which can be adjusted in myfinder general
+12.Added the function of adjusting the longitudinal offset and button spacing of the buttons in myfinder, which can be adjusted in myfinder generally
+13.Added Delay Hidden MyFinder function, which can be adjusted in MyFinder General
+14.Dock icon adds high-quality rendering, which can be enabled in Preferences - Advanced
+15.The Dock weather forecast icon adds a weather interface, and you can directly click on the weather icon in the Dock to add the weather of up to 5 cities
 </xml>
