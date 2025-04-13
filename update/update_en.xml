@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10.6</ver>
+		<ver>1.10.7</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI Airplane will cause irregular freezing or crashing issues, you can set it in MSI Airplane, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
