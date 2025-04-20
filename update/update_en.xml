@@ -1,23 +1,18 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10.7</ver>
+		<ver>1.10.8</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI Airplane will cause irregular freezing or crashing issues, you can set it in MSI Airplane, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Fixed the issue that Steam would open the explorer when using offline startup in some systems
-2.Fixed the crash issue caused by the animation of some system windows
-3.Fixed the issue that the Dock was stuck after turning off Minimized Dock in the previous version preferences
-4.Fixed rendering errors in previous versions
-5.Fixed the issue that some new Intel CPUs did not display temperature
-6.Fixed the issue that myfinder was displayed on the same screen when starting up with multi-screen boot in all previous versions (to be experimented)
-7.Fixed the issue that the lyrics were rendered incorrectly after the lyrics of the player were hidden in all previous versions
-8.Fix other issues
-9.Added Slovak translation, thanks to netizen @grimind-tech
-10.Myfinder lyrics added the function of adjusting the lyrics cropping, click the myfinder lyrics secondary menu
-11.Added the function of adjusting the height of myfinder, which can be adjusted in myfinder general
-12.Added the function of adjusting the longitudinal offset and button spacing of the buttons in myfinder, which can be adjusted in myfinder generally
-13.Added Delay Hidden MyFinder function, which can be adjusted in MyFinder General
-14.Dock icon adds high-quality rendering, which can be enabled in Preferences - Advanced
-15.The Dock weather forecast icon adds a weather interface, and you can directly click on the weather icon in the Dock to add the weather of up to 5 cities
+1.The Refresh current city weather button has been added in the lower left corner of the weather interface
+2.Fixed the issue that the skin editor editing dock skin preview did not match the actual one
+3.Fixed the Dock Immersion Mode error when using skins
+4.Dock window preview adjustments are sorted by window creation time
+5.Fixed the issue that you need to click twice to display the menu after the menu on the right side of myfinder is hidden
+6.Fixed the error that the Dock was displayed on multiple screens at the same time after high-quality rendering was enabled
+7.Fixed the issue that some launchpad icons were not displayed
+8.Cancel the overlay rendering of the calendar interface to make the text more visible
+9.Corrected the Japanese translation, thanks to the netizens for @HanayumiR
+10.Fix the Italian translation, thanks to the netizens for @Kevin
 </xml>
