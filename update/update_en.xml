@@ -1,18 +1,17 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10.9</ver>
+		<ver>1.10.9.3</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Fixed the issue of the weather forecast not working. In the new version, when using the new weather forecast, you need to reset the city area on the weather forecast interface.
-2.Added the detection of MSI Afterburner. If MSI Afterburner is detected, a pop-up window will prompt you to add it to the exclusion list.
-3.Fixed the problem of incorrect adjustment in the volume synthesizer when there are multiple audio devices.
-4.Added a weather forecast icon to Myfinder, which can be enabled in the general settings of Myfinder in the preferences.
-5.Fixed the error of the lunar calendar in the calendar.
-6.Fixed the abnormal window animation rotation when continuously clicking on the window list in Stage Manager.
-7.Adapted to the lyrics of the new version of KuGou Music.
-8.Fixed the issue that when hovering the mouse over for preview in some system Dock windows, the preview display blocks the Dock window preview.
-9.Fixed the problem that the desktop blurring does not display in the launchpad of some systems.
-10.Corrected the translation in Portuguese (Brazil), thanks to user @Matheeuz.
+1.Redesigned dock window preview
+2.Optimized the switching of the scheduling window in front of the stage
+3.Added the function of only displaying the window list in Stage Manager, which will no longer hide the background program window after it is enabled, and it will be enabled in Preferences - Stage Manager
+4.Fixed some program tray icons not activating
+5.Optimized minimized window animations
+6.Win11 23H2 and later versions use a new interface to render minimized animations and dock icons
+7.Optimized the automatic location acquisition of weather forecasts
+8.Corrected Portuguese translation, thanks to netizen @Eng Melo
+9.Corrected the Russian translation, thanks to the netizens for @mindryder
 </xml>
