@@ -1,17 +1,21 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10.9.3</ver>
+		<ver>1.10.9.4 beta</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Redesigned dock window preview
-2.Optimized the switching of the scheduling window in front of the stage
-3.Added the function of only displaying the window list in Stage Manager, which will no longer hide the background program window after it is enabled, and it will be enabled in Preferences - Stage Manager
-4.Fixed some program tray icons not activating
-5.Optimized minimized window animations
-6.Win11 23H2 and later versions use a new interface to render minimized animations and dock icons
-7.Optimized the automatic location acquisition of weather forecasts
-8.Corrected Portuguese translation, thanks to netizen @Eng Melo
-9.Corrected the Russian translation, thanks to the netizens for @mindryder
+1.Fixed the problem of myfinder audio device display error at startup
+2.Adjust the steam startup mechanism in the creative workshop and fix the crash caused by the creative workshop
+3.Fixed the problem that some programs of the volume synthesizer do not display icons
+4.Fixed the problem that the Firefox icon on the dock does not display the running dot after the Firefox browser turns on the privacy mode
+5.Optimize the dock window preview display speed
+6.Fixed the abnormal display of the myfinder circle logo animation
+7.Fixed the dock cannot drag and drop files to open when the administrator mode of all previous versions is started
+8.Fixed the crash of opening preferences on some computers
+9.Myfinder adds a background style function, you can choose blur, linear gradient blur, shadow, change in preferences-myfinder general
+10.Adjust the dock window preview blur style, change to linear gradient blur
+11.The theme icon adds a global dark icon function, and the calendar also adds dark mode modification
+12.Fixed the blur failure of some programs when the front desk scheduling turns on the blurred background window
+13.Optimize the dock icon rendering, change to decimal variable rendering for smoother
 </xml>
