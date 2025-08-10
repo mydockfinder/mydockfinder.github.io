@@ -1,21 +1,25 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10.9.4 beta</ver>
+		<ver>1.10.9.5</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Fixed the problem of myfinder audio device display error at startup
-2.Adjust the steam startup mechanism in the creative workshop and fix the crash caused by the creative workshop
-3.Fixed the problem that some programs of the volume synthesizer do not display icons
-4.Fixed the problem that the Firefox icon on the dock does not display the running dot after the Firefox browser turns on the privacy mode
-5.Optimize the dock window preview display speed
-6.Fixed the abnormal display of the myfinder circle logo animation
-7.Fixed the dock cannot drag and drop files to open when the administrator mode of all previous versions is started
-8.Fixed the crash of opening preferences on some computers
-9.Myfinder adds a background style function, you can choose blur, linear gradient blur, shadow, change in preferences-myfinder general
-10.Adjust the dock window preview blur style, change to linear gradient blur
-11.The theme icon adds a global dark icon function, and the calendar also adds dark mode modification
-12.Fixed the blur failure of some programs when the front desk scheduling turns on the blurred background window
-13.Optimize the dock icon rendering, change to decimal variable rendering for smoother
+1.Fixed a crash in the previous beta due to gradient blur
+2.Fixed the startup freeze caused by some audio devices
+3.Fixed the issue that the second screen does not display when multiple screens display MyFinder at the same time
+4.Fix the problem of whether MyFinder is booted or the first screen is displayed when it is fixed on the second screen
+5.Corrected Italian translation, thanks to netizens for @Kevin
+6.Optimized the monochrome rendering of the MyFinder tray icon
+7.Increase high-quality rendering of text, enable it in Preferences - Global Settings, and test it after checking to identify whether the system supports it
+8.Optimized the window preview animation
+9.Fixed in all previous versions, when the screen of the dock is automatic in multi-screen situations, switching the screen back and forth will cause the MyFinder window boundary reconstruction problem
+10.Fixed the issue that myfinder immersion mode did not disappear after using WIN D to display the desktop when multiple maximized windows
+11.Fixed a crash caused by rendering
+12.Fixed a freeze crash caused by tray icon
+13.Fix win11 24H2 myfinder wallpaper color detection invalid
+14.Fix MyFinder audio device display incomplete
+15.Fixed the lock screen time displayed in front of the stage
+16.Optimized the pre-stage scheduling animation and window boundaries
+17.Fixed other issues
 </xml>
