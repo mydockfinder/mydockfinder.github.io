@@ -1,31 +1,18 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10.9.6</ver>
+		<ver>1.10.9.8</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Optimized rendering smoothness of some interfaces
-2.Fixed a bug where MyFinder's gradient blur rendering was blurry when switching between multiple monitors
-3.Fixed a crash issue with the quick switch in the front-end scheduling application
-4.Fixed an issue where the hidden mode display in the dock failed to work after switching monitors
-5.Adjusted the background fill of the dock window preview, removing blur and changing it to a solid color
-6.New launcher rendering to improve frame rate drops
-7.Fixed an issue where MyFinder's tray icon did not appear on the second monitor when switching from a single monitor to multiple monitors
-8.Fixed a freeze issue when switching from a single monitor to multiple monitors multiple times
-9.Unified the window width of the front-end scheduling window list
-10.Fixed a bug where audio devices were not fully displayed
-11.Fixed an issue where folder icons were incorrectly rendered after restoring them
-12.Fixed an issue where the MyFinder Control Center's secondary menu displayed incorrectly
-13.Adjusted the MyFinder Control Center button mechanism to activate the secondary menu when the Control Center is activated When the secondary menu is displayed, clicking the Control Center icon again will restore the secondary menu window back to the Control Center.
-14.MyFinder Lyrics now has the ability to hide lyrics directly with the mouse wheel or right-click.
-15.Fixed a bug that prevented the display of several programs, including Device Manager and Event Viewer, from being displayed in previous versions.
-16.Fixed a crash in the dock window preview when foobar2000 is not playing.
-17.Fixed a bug that prevented clicking the dock Start menu when the foreground window is in administrator mode.
-18.Fixed a bug that prevented the display of certain program windows in the front-end scheduler.
-19.Fixed a bug that prevented the icons in the Advanced Editing icon window from updating after editing an icon in the left list.
-20.Fixed a bug that caused the window preview title to display incorrectly.
-21.Added a refresh weather function to the right-click menu of the dock weather icon, and changed the forecast to one hour.
-22.Added a function that resets all rendering data when resetting the graphics card, fixing a crash when installing graphics card drivers.
-23.Corrected the German translation, thanks to @ɴᴇʀᴏ ᴅ. ᴋᴀᴍɪɴᴀ
+1.Brand new debug run, there may be unknown bugs. It will automatically restart if it freezes or crashes (test version only)
+2.Added delayed display for Dock immersion mode, adjustable in Preferences - myDock General settings
+3.Fixed incorrect launcher size in multi-monitor setups
+4.Added a prompt when multiple screens display the Dock simultaneously, preventing icon dragging[eos]
+5.Fixed freezing and crashing issues
+6.Optimized detection after closing Dock window previews
+7.Fixed issues where weather forecasts for some regions displayed incorrectly and caused high CPU usage when temperatures dropped below -10°C
+8.Adjusted right-click menu sorting for Dock separators
+9.Adapted PowerToys Advanced Paste to prevent replacing windows under foreground scheduling
+10.Fixed high CPU usage caused by gradient blur
 </xml>
