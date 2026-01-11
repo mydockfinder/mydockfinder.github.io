@@ -14,6 +14,7 @@ If the desktop icon is not displayed after enabling pre-stage scheduling, you ca
 7.Fixed crashes caused by gradient blur effects in window previews.
 8.Fixed misaligned window-switching animations when too many windows are listed in the front dispatch window list.
 9.Fixed misalignment of launcher icons in portrait mode.
-10.Added the ability to add non-fullscreen applications. After adding a non-fullscreen application, the dock and Finder can be activated when this program window is in fullscreen, in Preferences - Window Management.
-11.Added the ability to add game applications. After adding a game application, DLL injection will not be used to intercept minimize window animations and show/hide window animations, ensuring smooth gameplay. It also allows the dock and Finder to automatically restart when a fullscreen game is running in windowed fullscreen mode, in Preferences - Window Management.
+10.Added the option to capture screenshots with minimized window animations, with choices of UWP, DXGI, or GDI. In all previous versions, the default was UWP, which also provides the best effect. Only Windows 10 systems may have a yellow border in the screenshots; if this border is a concern, you can choose DXGI or GDI. It is not recommended to change this on Windows 11 systems. Only UWP screenshots allow you to enable the dynamic refresh feature when minimized.
+11.Added the ability to add non-fullscreen applications. After adding a non-fullscreen application, the dock and Finder can be activated when this program window is in fullscreen, in Preferences - Window Management.
+12.Added the ability to add game applications. After adding a game application, DLL injection will not be used to intercept minimize window animations and show/hide window animations, ensuring smooth gameplay. It also allows the dock and Finder to automatically restart when a fullscreen game is running in windowed fullscreen mode, in Preferences - Window Management.
 </xml>
