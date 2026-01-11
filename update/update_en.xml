@@ -1,18 +1,19 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10.9.8</ver>
+		<ver>1.10.9.9</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Brand new debug run, there may be unknown bugs. It will automatically restart if it freezes or crashes (test version only)
-2.Added delayed display for Dock immersion mode, adjustable in Preferences - myDock General settings
-3.Fixed incorrect launcher size in multi-monitor setups
-4.Added a prompt when multiple screens display the Dock simultaneously, preventing icon dragging[eos]
-5.Fixed freezing and crashing issues
-6.Optimized detection after closing Dock window previews
-7.Fixed issues where weather forecasts for some regions displayed incorrectly and caused high CPU usage when temperatures dropped below -10°C
-8.Adjusted right-click menu sorting for Dock separators
-9.Adapted PowerToys Advanced Paste to prevent replacing windows under foreground scheduling
-10.Fixed high CPU usage caused by gradient blur
+1.Added a debug mode toggle, which can be enabled in Preferences - Global Settings.
+2.Fixed a freeze crash caused by using the UWP message loop in the previous version.
+3.Fixed a freezing issue in all previous versions when a large number of windows were generated in the background by certain programs (e.g., IDM batch background downloads).
+4.Fixed overexposure of the launcher background after enabling HDR in all previous versions.
+5.Fixed too dark color rendering in gradient blur effects after enabling HDR.
+6.Fixed crashes in all previous versions caused by multithreaded modifications of dock icon data.
+7.Fixed crashes caused by gradient blur effects in window previews.
+8.Fixed misaligned window-switching animations when too many windows are listed in the front dispatch window list.
+9.Fixed misalignment of launcher icons in portrait mode.
+10.Added the ability to add non-fullscreen applications. After adding a non-fullscreen application, the dock and Finder can be activated when this program window is in fullscreen, in Preferences - Window Management.
+11.Added the ability to add game applications. After adding a game application, DLL injection will not be used to intercept minimize window animations and show/hide window animations, ensuring smooth gameplay. It also allows the dock and Finder to automatically restart when a fullscreen game is running in windowed fullscreen mode, in Preferences - Window Management.
 </xml>
