@@ -5,16 +5,18 @@
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Added a debug mode toggle, which can be enabled in Preferences - Global Settings.
-2.Fixed a freeze crash caused by using the UWP message loop in the previous version.
-3.Fixed a freezing issue in all previous versions when a large number of windows were generated in the background by certain programs (e.g., IDM batch background downloads).
-4.Fixed overexposure of the launcher background after enabling HDR in all previous versions.
-5.Fixed too dark color rendering in gradient blur effects after enabling HDR.
-6.Fixed crashes in all previous versions caused by multithreaded modifications of dock icon data.
-7.Fixed crashes caused by gradient blur effects in window previews.
-8.Fixed misaligned window-switching animations when too many windows are listed in the front dispatch window list.
-9.Fixed misalignment of launcher icons in portrait mode.
-10.Added the option to capture screenshots with minimized window animations, with choices of UWP, DXGI, or GDI. In all previous versions, the default was UWP, which also provides the best effect. Only Windows 10 systems may have a yellow border in the screenshots; if this border is a concern, you can choose DXGI or GDI. It is not recommended to change this on Windows 11 systems. Only UWP screenshots allow you to enable the dynamic refresh feature when minimized.
-11.Added the ability to add non-fullscreen applications. After adding a non-fullscreen application, the dock and Finder can be activated when this program window is in fullscreen, in Preferences - Window Management.
-12.Added the ability to add game applications. After adding a game application, DLL injection will not be used to intercept minimize window animations and show/hide window animations, ensuring smooth gameplay. It also allows the dock and Finder to automatically restart when a fullscreen game is running in windowed fullscreen mode, in Preferences - Window Management.
+1.Fix Control Panel icon on dock also showing a run indicator after closing the Control Panel window
+2.Fixed the Dock Control Panel icon not storing the style of the last time the Control Panel was opened
+3.Fix: Finder not showing available time when battery time is less than 60 minutes remaining
+4.The Finder battery icon increases the low color change, orange below 20%, red below 10%
+5.Finder Battery Menu Adds Battery Health Display (To Be Experimented)
+6.After dragging the dock icon to leave the dock, press the Ctrl or Shift or Alt keys to toggle the removal or create shortcut status, you can drag and drop the icon to the desktop or explorer window to create a shortcut
+7.Fixed an issue where the drag window could not be activated by clicking the Schedule Window list after moving between two screens
+8.Fixed the issue that the WeChat tray icon was located down the right-click menu
+9.Add the adjustment program tray icon activation function, you can click the program you want to adjust in the preferences - tray, and then select the adjustment tray icon activation method, after selecting the activation method, the right-click menu will be automatically activated for testing, if the right-click menu can be displayed normally to prove that the method is correct, If the menu does not appear, choose another method
+10.Fixed the issue that some buttons would be out of sync after switching between light and dark in the previous version of MyFinder
+11.Fixed the issue of some icon masks on the launchpad showing strokes
+12.Adjust the way the gradient blurs screenshot to prevent crashes
+13.Set shortcut key display dock support activating the dock in desktop display mode
+14.Port some of Microsoft's WIN2D functions, no longer rely on the WIN2D library, prevent conflicts with other programs, and improve stability
 </xml>
