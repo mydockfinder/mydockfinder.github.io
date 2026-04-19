@@ -1,22 +1,32 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.10.9.9</ver>
+		<ver>1.12</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Fix Control Panel icon on dock also showing a run indicator after closing the Control Panel window
-2.Fixed the Dock Control Panel icon not storing the style of the last time the Control Panel was opened
-3.Fix: Finder not showing available time when battery time is less than 60 minutes remaining
-4.The Finder battery icon increases the low color change, orange below 20%, red below 10%
-5.Finder Battery Menu Adds Battery Health Display (To Be Experimented)
-6.After dragging the dock icon to leave the dock, press the Ctrl or Shift or Alt keys to toggle the removal or create shortcut status, you can drag and drop the icon to the desktop or explorer window to create a shortcut
-7.Fixed an issue where the drag window could not be activated by clicking the Schedule Window list after moving between two screens
-8.Fixed the issue that the WeChat tray icon was located down the right-click menu
-9.Add the adjustment program tray icon activation function, you can click the program you want to adjust in the preferences - tray, and then select the adjustment tray icon activation method, after selecting the activation method, the right-click menu will be automatically activated for testing, if the right-click menu can be displayed normally to prove that the method is correct, If the menu does not appear, choose another method
-10.Fixed the issue that some buttons would be out of sync after switching between light and dark in the previous version of MyFinder
-11.Fixed the issue of some icon masks on the launchpad showing strokes
-12.Adjust the way the gradient blurs screenshot to prevent crashes
-13.Set shortcut key display dock support activating the dock in desktop display mode
-14.Port some of Microsoft's WIN2D functions, no longer rely on the WIN2D library, prevent conflicts with other programs, and improve stability
+1.Added a toggle in myfinder monitoring to highlight when usage is too high. The previous version was enabled by default; this update adds a switch that can be turned on in Preferences - Monitoring.
+2.Fixed the issue where Dock would freeze when Immersive Mode and icon reflection were enabled simultaneously.
+3.Fixed freezes caused by Dock icons.
+4.Fixed occasional failures in input method detection and switching in all previous versions.
+5.Fixed high CPU usage when the system Recycle Bin had too many files causing Dock monitoring to detect files.
+6.Optimized the Dock high-quality icon rendering feature, no longer requiring a program restart.
+7.Optimized Dock to show window icons for programs when some exe programs do not have icons, for all previous versions.
+8.Rewrote gradient blur HLSL files. Previous versions’ non-D2D-specific rendering code could cause exceptions, now compiled as D2D HLSL code.
+9.Fixed occasional refresh issues with the myfinder tray.
+10.Fixed icon rendering anomalies when minimized to Dock in the previous version.
+11.Fixed some systems incorrectly recognizing exe programs as UWP.
+12.Fixed freeze issues after sleep wake-up (experimental).
+13.Fixed an issue in the previous version where minimized Dock icons would show minimized windows after GPU adapter reset.
+14.Added VRAM management feature to periodically clean up unused VRAM resources.
+15.Fixed rendering not filling completely when myfinder monitoring curve usage is at 100.
+16.Fixed crashes caused by GPU adapter resets in all previous versions (experimental).
+17.Rewrote some forced GPU rendering code to software CPU rendering to prevent crashes caused by certain GPU driver anomalies (e.g., multi-screen).
+18.Encapsulated some Composition low-level code to prevent freezes after exceptions.
+19.Optimized Dock icon rendering performance.
+20.Fixed Dockfinder freezes caused by some programs not responding in all previous versions.
+21.Fixed freezes caused when adding minimized windows to the foreground scheduler.
+22.Fixed foreground scheduler issue where the window list could not be activated by mouse in multi-screen setups.
+23.Fixed icon position misalignment when switching pages in Launchpad and moving between multiple screens.
+24.Fixed other issues.
 </xml>
