@@ -1,32 +1,32 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.12</ver>
+		<ver>1.13</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Added a toggle in myfinder monitoring to highlight when usage is too high. The previous version was enabled by default; this update adds a switch that can be turned on in Preferences - Monitoring.
-2.Fixed the issue where Dock would freeze when Immersive Mode and icon reflection were enabled simultaneously.
-3.Fixed freezes caused by Dock icons.
-4.Fixed occasional failures in input method detection and switching in all previous versions.
-5.Fixed high CPU usage when the system Recycle Bin had too many files causing Dock monitoring to detect files.
-6.Optimized the Dock high-quality icon rendering feature, no longer requiring a program restart.
-7.Optimized Dock to show window icons for programs when some exe programs do not have icons, for all previous versions.
-8.Rewrote gradient blur HLSL files. Previous versions’ non-D2D-specific rendering code could cause exceptions, now compiled as D2D HLSL code.
-9.Fixed occasional refresh issues with the myfinder tray.
-10.Fixed icon rendering anomalies when minimized to Dock in the previous version.
-11.Fixed some systems incorrectly recognizing exe programs as UWP.
-12.Fixed freeze issues after sleep wake-up (experimental).
-13.Fixed an issue in the previous version where minimized Dock icons would show minimized windows after GPU adapter reset.
-14.Added VRAM management feature to periodically clean up unused VRAM resources.
-15.Fixed rendering not filling completely when myfinder monitoring curve usage is at 100.
-16.Fixed crashes caused by GPU adapter resets in all previous versions (experimental).
-17.Rewrote some forced GPU rendering code to software CPU rendering to prevent crashes caused by certain GPU driver anomalies (e.g., multi-screen).
-18.Encapsulated some Composition low-level code to prevent freezes after exceptions.
-19.Optimized Dock icon rendering performance.
-20.Fixed Dockfinder freezes caused by some programs not responding in all previous versions.
-21.Fixed freezes caused when adding minimized windows to the foreground scheduler.
-22.Fixed foreground scheduler issue where the window list could not be activated by mouse in multi-screen setups.
-23.Fixed icon position misalignment when switching pages in Launchpad and moving between multiple screens.
-24.Fixed other issues.
+1.Fixed the issue in the previous version where checking Recycle Bin files with a network drive caused lag
+2.Fixed the issue where icons did not appear in the left-side list of some system preference interfaces
+3.Fixed component rendering anomalies from the previous beta
+4.Fixed the freezing issue caused after connecting or disconnecting multiple screens in all previous versions
+5.Optimized dock window preview when there are too many windows
+6.Optimized dock window preview, showing a list when there are too many windows to prevent incomplete display
+7.Adapted for WPS and Discord, optimized to display only one icon for the program
+8.Fixed crash caused by window display animation after sleep/wake
+9.Fixed Finder monitoring highlights not working after restart
+10.Fixed issue where some programs' icons did not appear in the Finder tray
+11.Fixed freezing issue when displaying the dock on multiple screens and switching between them
+12.Fixed duplicate Baidu Cloud tray icon display in the previous version
+13.Fixed misalignment of Launchpad icon when dock is displayed at the top of the screen
+14.Fixed occasional missing reflection issue when dock immersive mode and icon reflection are enabled simultaneously
+15.Optimized Finder immersive mode detection, fixed freezing caused by MyFinder immersive mode in all previous versions
+16.Fixed abnormal pop-up issues caused by some system audio devices
+17.Fixed failure to open the Start menu in some system displays
+18.Fixed occasional issue where the front desk scheduling window list could not be activated when multiple windows were in the foreground
+19.Optimized Finder hidden mouse activation, automatically blocking window close button area to prevent accidental clicks when closing windows
+20.Added global rendering frame rate option: if the monitor is below 90Hz, can set up to 90Hz; above 90Hz, can set to the monitor's maximum refresh rate. Found in Preferences - Global Settings
+21.Fixed window close animation failure caused by the Win11 AI component
+22.Fixed issue where exiting DockFinder would cancel the system's auto-hide taskbar if the system taskbar was not hidden via DockFinder
+23.Optimized window minimize animation rendering smoothness
+24.Fixed issue in previous versions where continuously activating windows would cause front desk scheduling to repeatedly activate windows
 </xml>
