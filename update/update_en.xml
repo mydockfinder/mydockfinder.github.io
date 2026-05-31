@@ -1,32 +1,21 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.13</ver>
+		<ver>1.14</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Fixed the issue in the previous version where checking Recycle Bin files with a network drive caused lag
-2.Fixed the issue where icons did not appear in the left-side list of some system preference interfaces
-3.Fixed component rendering anomalies from the previous beta
-4.Fixed the freezing issue caused after connecting or disconnecting multiple screens in all previous versions
-5.Optimized dock window preview when there are too many windows
-6.Optimized dock window preview, showing a list when there are too many windows to prevent incomplete display
-7.Adapted for WPS and Discord, optimized to display only one icon for the program
-8.Fixed crash caused by window display animation after sleep/wake
-9.Fixed Finder monitoring highlights not working after restart
-10.Fixed issue where some programs' icons did not appear in the Finder tray
-11.Fixed freezing issue when displaying the dock on multiple screens and switching between them
-12.Fixed duplicate Baidu Cloud tray icon display in the previous version
-13.Fixed misalignment of Launchpad icon when dock is displayed at the top of the screen
-14.Fixed occasional missing reflection issue when dock immersive mode and icon reflection are enabled simultaneously
-15.Optimized Finder immersive mode detection, fixed freezing caused by MyFinder immersive mode in all previous versions
-16.Fixed abnormal pop-up issues caused by some system audio devices
-17.Fixed failure to open the Start menu in some system displays
-18.Fixed occasional issue where the front desk scheduling window list could not be activated when multiple windows were in the foreground
-19.Optimized Finder hidden mouse activation, automatically blocking window close button area to prevent accidental clicks when closing windows
-20.Added global rendering frame rate option: if the monitor is below 90Hz, can set up to 90Hz; above 90Hz, can set to the monitor's maximum refresh rate. Found in Preferences - Global Settings
-21.Fixed window close animation failure caused by the Win11 AI component
-22.Fixed issue where exiting DockFinder would cancel the system's auto-hide taskbar if the system taskbar was not hidden via DockFinder
-23.Optimized window minimize animation rendering smoothness
-24.Fixed issue in previous versions where continuously activating windows would cause front desk scheduling to repeatedly activate windows
+1.Adjust the program mechanism: destroy all GPU resources when the monitor is turned off, and recreate the resources when the monitor is turned on to prevent freezing issues during long standby on certain systems.
+2.Fix the brightness display error in the previous version of MyFinder Control Center.
+3.Optimize MyFinder battery detection and fix the battery freezing issue caused when docking with all previous versions.
+4.Optimize the Dock folder interface cache.
+5.Adjust the Dock start menu icon mechanism: single-click to display the built-in Windows start menu, double-click or mouse wheel click the start menu icon to display a third-party start menu if available.
+6.Fix the icon display error for certain input methods in the previous version of MyFinder.
+7.Fix the lag caused by gradient blur when minimizing windows.
+8.Fix incorrect MyFinder tray icon display for some programs.
+9.Fix the incomplete display issue of the search component in preferences in previous versions.
+10.Optimize Dock high-quality icon rendering usage and smoothness.
+11.Fix the residual issue when minimizing windows in all previous versions.
+12.Fix the issue where screen clicks would fail after the empty recycle bin popup disappears.
+13.Fix the occasional issue in all previous versions where the Dock cannot activate windows (to be tested).
 </xml>
