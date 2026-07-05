@@ -1,21 +1,34 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.14</ver>
+		<ver>1.15</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
 	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
 	   Changelog
-1.Adjust the program mechanism: destroy all GPU resources when the monitor is turned off, and recreate the resources when the monitor is turned on to prevent freezing issues during long standby on certain systems.
-2.Fix the brightness display error in the previous version of MyFinder Control Center.
-3.Optimize MyFinder battery detection and fix the battery freezing issue caused when docking with all previous versions.
-4.Optimize the Dock folder interface cache.
-5.Adjust the Dock start menu icon mechanism: single-click to display the built-in Windows start menu, double-click or mouse wheel click the start menu icon to display a third-party start menu if available.
-6.Fix the icon display error for certain input methods in the previous version of MyFinder.
-7.Fix the lag caused by gradient blur when minimizing windows.
-8.Fix incorrect MyFinder tray icon display for some programs.
-9.Fix the incomplete display issue of the search component in preferences in previous versions.
-10.Optimize Dock high-quality icon rendering usage and smoothness.
-11.Fix the residual issue when minimizing windows in all previous versions.
-12.Fix the issue where screen clicks would fail after the empty recycle bin popup disappears.
-13.Fix the occasional issue in all previous versions where the Dock cannot activate windows (to be tested).
+·Brand-new compilation method improves stability
+·Fixed memory leak issues in some system graphics card drivers from previous versions (to be tested)
+·Optimized D3D resource release to improve stability
+·Fixed issue in the last version where ALT + F4 shutdown menu and scheduled shutdown weren't working
+·Fixed issue present in all previous versions where dragging and dropping files onto the dock would prevent minimizing the window by clicking the dock icon
+·Fixed crashes caused by interface rendering in previous versions
+·Fixed issue in the last version where dock icons displayed incorrectly after waking the screen from shutdown
+·Fixed rendering issues in the last version’s weather forecast window when three or more cities were displayed
+·Fixed crashes in all previous versions when moving the mouse quickly back and forth across the dock while high-quality rendering icons were enabled
+·Fixed sunrise/sunset recognition errors on startup when auto-switching between light and dark modes in previous versions
+·Fixed freezing issue when restarting the program from Preferences in the last version
+·Fixed rendering stutter due to CPU scheduling in earlier test versions
+·Fixed crashes in all previous versions caused by moving sliders too fast with the mouse
+·Adjusted window minimizing interception mechanism, fixing issues in all previous versions where some systems didn’t show minimize animations after UAC was turned off
+·Fixed WiFi list not refreshing in previous versions
+·Fixed mismatch between clicked WiFi name and actual connected WiFi in all previous versions
+·Fixed freezing issue when editing lyrics if the player’s lyrics window was too wide in previous versions
+·Fixed issue in the last version where high-quality rendered icons didn’t display for original icons smaller than 128 pixels
+·Optimized UWP screenshot code
+·Fixed dock icon progress bar remnants
+·Fixed crashes caused by some system explorer interfaces
+·Fixed incomplete display of left-side icons in the advanced icon editing interface in the last version
+·Added a power icon in desktop Finder for switching power management; on Windows 11, if only Balanced power management exists, you can choose Power Saver, Balanced, or Performance, and added a Power Saver mode hint on the battery/power icon
+·Fixed garbled rendering of dock icons with HDR enabled in all previous versions.After this update, you'll need to edit the icon again for it to display properly.
+·Fixed garbled display of oversized tray icons in some programs in the last version
+·Fixed tray icon flickering and freezing of MyFinder after long standby
 </xml>
