@@ -1,34 +1,29 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.15</ver>
+		<ver>1.18</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
-If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon
-	    If using MSI afterburner will cause irregular freezing or crashing issues, you can set it in MSI afterburner, add dock_64.exe, then select dock_64.exe, and finally select "None" on the right side.
+If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon	   
 	   Changelog
-·Brand-new compilation method improves stability
-·Fixed memory leak issues in some system graphics card drivers from previous versions (to be tested)
-·Optimized D3D resource release to improve stability
-·Fixed issue in the last version where ALT + F4 shutdown menu and scheduled shutdown weren't working
-·Fixed issue present in all previous versions where dragging and dropping files onto the dock would prevent minimizing the window by clicking the dock icon
-·Fixed crashes caused by interface rendering in previous versions
-·Fixed issue in the last version where dock icons displayed incorrectly after waking the screen from shutdown
-·Fixed rendering issues in the last version’s weather forecast window when three or more cities were displayed
-·Fixed crashes in all previous versions when moving the mouse quickly back and forth across the dock while high-quality rendering icons were enabled
-·Fixed sunrise/sunset recognition errors on startup when auto-switching between light and dark modes in previous versions
-·Fixed freezing issue when restarting the program from Preferences in the last version
-·Fixed rendering stutter due to CPU scheduling in earlier test versions
-·Fixed crashes in all previous versions caused by moving sliders too fast with the mouse
-·Adjusted window minimizing interception mechanism, fixing issues in all previous versions where some systems didn’t show minimize animations after UAC was turned off
-·Fixed WiFi list not refreshing in previous versions
-·Fixed mismatch between clicked WiFi name and actual connected WiFi in all previous versions
-·Fixed freezing issue when editing lyrics if the player’s lyrics window was too wide in previous versions
-·Fixed issue in the last version where high-quality rendered icons didn’t display for original icons smaller than 128 pixels
-·Optimized UWP screenshot code
-·Fixed dock icon progress bar remnants
-·Fixed crashes caused by some system explorer interfaces
-·Fixed incomplete display of left-side icons in the advanced icon editing interface in the last version
-·Added a power icon in desktop Finder for switching power management; on Windows 11, if only Balanced power management exists, you can choose Power Saver, Balanced, or Performance, and added a Power Saver mode hint on the battery/power icon
-·Fixed garbled rendering of dock icons with HDR enabled in all previous versions.After this update, you'll need to edit the icon again for it to display properly.
-·Fixed garbled display of oversized tray icons in some programs in the last version
-·Fixed tray icon flickering and freezing of MyFinder after long standby
+·Cancel the GPU multithreading optimization feature
+·Corrected the German and English translations, thanks to netizen @Medienflow
+·Fix the issue in all previous versions where screen corners sometimes displayed incorrectly when the screen resolution changed
+·Optimize built-in window display animation and synchronize it with global window display animation
+·Fix the issue in all previous versions where missing built-in theme icons caused infinite loop memory leaks
+·Adjust global D3D11 level from 11.1 to 11.0 to improve compatibility and stability
+·Fix the issue in all previous versions where Launchpad failed to retrieve all icons if it could not get Start menu or desktop icons, resulting in no icons displaying in Launchpad
+·Adapt to Kugou Music full screen mode
+·Fix the issue in all previous versions where MyFinder menu detection caused Kugou Music interface to freeze
+·Optimize dock window boundaries when they are not 0, adding dock move animation when Launchpad is opened
+·Adapt to some pure white/black icons, which will change brightness based on icon mask color
+·Adjust MyFinder tray icon persistence configuration, modify it to a system virtual path to prevent persistence configuration failure caused by path changes after some UWP app updates. After this update, some programs’ persistence settings will be invalid and need to be reset, and fix the issue in all previous versions where some programs could not persist in the MyFinder tray icon
+·Optimize UWP app icon retrieval and fix the issue where some UWP app icons did not display
+·Fix the issue in all previous versions where enabling foreground scheduling could cause windows near the scheduling window list to shrink into the list when the current window was resized
+·Adapt to Windows 11 built-in screenshots to prevent display animation from causing screenshot abnormalities
+·Fix the issue in all previous versions where Dock progress bar caused extremely high CPU usage and memory leaks in rare cases
+·Optimize CPU usage when enlarging dock icons
+·Optimize CPU usage during minimized window animation rendering
+·Fix the issue in all previous versions where quickly showing and disappearing window previews could occasionally cause crashes
+·Fix the previous version issue where MyFinder and Dock rendering occasionally did not display images
+·Fix the issue in all previous versions where the Dock's overall position shifted after resolution changes
+·Optimize detection of multiple monitors of the same model, displaying the corresponding monitor number for each monitor name
 </xml>
