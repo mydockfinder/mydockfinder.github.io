@@ -1,29 +1,23 @@
 <?xml version="1.0"?>
 <xml>
-		<ver>1.18</ver>
+		<ver>1.19</ver>
     <log>If there is an update when the file file is missing, go to Steam Client - Library List - mydockfinder - right-click menu - Properties - Local File - Verify software file integrity
 If the desktop icon is not displayed after enabling pre-stage scheduling, you can right-click on the desktop-view-display desktop icon to enable display desktop icon	   
 	   Changelog
-·Cancel the GPU multithreading optimization feature
-·Corrected the German and English translations, thanks to netizen @Medienflow
-·Fix the issue in all previous versions where screen corners sometimes displayed incorrectly when the screen resolution changed
-·Optimize built-in window display animation and synchronize it with global window display animation
-·Fix the issue in all previous versions where missing built-in theme icons caused infinite loop memory leaks
-·Adjust global D3D11 level from 11.1 to 11.0 to improve compatibility and stability
-·Fix the issue in all previous versions where Launchpad failed to retrieve all icons if it could not get Start menu or desktop icons, resulting in no icons displaying in Launchpad
-·Adapt to Kugou Music full screen mode
-·Fix the issue in all previous versions where MyFinder menu detection caused Kugou Music interface to freeze
-·Optimize dock window boundaries when they are not 0, adding dock move animation when Launchpad is opened
-·Adapt to some pure white/black icons, which will change brightness based on icon mask color
-·Adjust MyFinder tray icon persistence configuration, modify it to a system virtual path to prevent persistence configuration failure caused by path changes after some UWP app updates. After this update, some programs’ persistence settings will be invalid and need to be reset, and fix the issue in all previous versions where some programs could not persist in the MyFinder tray icon
-·Optimize UWP app icon retrieval and fix the issue where some UWP app icons did not display
-·Fix the issue in all previous versions where enabling foreground scheduling could cause windows near the scheduling window list to shrink into the list when the current window was resized
-·Adapt to Windows 11 built-in screenshots to prevent display animation from causing screenshot abnormalities
-·Fix the issue in all previous versions where Dock progress bar caused extremely high CPU usage and memory leaks in rare cases
-·Optimize CPU usage when enlarging dock icons
-·Optimize CPU usage during minimized window animation rendering
-·Fix the issue in all previous versions where quickly showing and disappearing window previews could occasionally cause crashes
-·Fix the previous version issue where MyFinder and Dock rendering occasionally did not display images
-·Fix the issue in all previous versions where the Dock's overall position shifted after resolution changes
-·Optimize detection of multiple monitors of the same model, displaying the corresponding monitor number for each monitor name
+·Added dock background liquid glass configuration. You need to manually add dockbgtype=1 under [normal] in config.ini. After restarting, the dock background liquid glass effect can be enabled.
+·Brand new compilation method, program instruction set changed to AVX.
+·Completely new dock icon rendering method, high-quality icon rendering removed. In this version, rendering is always high-quality, fully GPU-accelerated, fixing all previous versions' icon residue and other rendering issues.
+·Fixed the previous issue where leaving the dock from the left side without icon magnification enabled caused text labels and icon selection effects to be misaligned.
+·Optimized minimized window animation shadow rendering, using D3D11HLSL to render shadows, improving performance and reducing video memory usage.
+·Fixed the previous version's dock icon scaling and global scaling configuration reading error.
+·Fixed the previous version's dock icon loss issue.
+·Adapted to WeChat Mini Programs. Each mini program can display an independent icon and can also be added to the dock with WeChat Mini Program binding.
+·Fixed the previous version's issue where adding a general icon would cause the window to freeze after clicking add.
+·Fixed the issue in the previous version where front scheduling on multiple screens could cause the program to freeze.
+·Fixed the front scheduling issue where continuously switching windows could cause a certain window to disappear from the window list.
+·Fixed the high CPU usage problem caused by recycling bin detection due to a large number of disk partitions on some systems.
+·Fixed the incorrect icon sorting order issue when saving in MyFinder.
+·Fixed activation issues for some program tray icon menus.
+·Optimized the Launchpad icon rendering, separating text and icons to save GPU usage.
+·Optimized the Launchpad drag-and-swap icon order feature.
 </xml>
